@@ -11,17 +11,13 @@
 namespace morimori.TScore {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\m" +
-        "orimori.TScore\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimo" +
+        "ri.TScore\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView EmployeeView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            EmployeeView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "EmployeeView");
         }
     }
 }

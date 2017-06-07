@@ -22272,16 +22272,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\morimori.TScore.UWP.csproj",
+      "projectUniqueName": "Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\morimori.TScore.UWP.csproj",
       "projectName": "morimori.TScore.UWP",
-      "projectPath": "Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\morimori.TScore.UWP.csproj",
-      "projectJsonPath": "Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\project.json",
+      "projectPath": "Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\morimori.TScore.UWP.csproj",
+      "projectJsonPath": "Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore\\morimori.TScore.csproj": {
-              "projectPath": "Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore\\morimori.TScore.csproj"
+            "Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore\\morimori.TScore.csproj": {
+              "projectPath": "Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimori.TScore\\morimori.TScore.csproj"
             }
           }
         }

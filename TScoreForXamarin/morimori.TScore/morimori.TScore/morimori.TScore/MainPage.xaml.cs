@@ -17,16 +17,16 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            Title = "トーナメント一覧";
+            //Title = "トーナメント一覧";
 
-            employees.Add(new Employee { DisplayName = "Rob Finnerty" });
-            employees.Add(new Employee { DisplayName = "Bill Wrestler" });
-            employees.Add(new Employee { DisplayName = "Dr. Geri-Beth Hooper" });
-            employees.Add(new Employee { DisplayName = "Dr. Keith Joyce-Purdy" });
-            employees.Add(new Employee { DisplayName = "Sheri Spruce" });
-            employees.Add(new Employee { DisplayName = "Burt Indybrick" });
+            //employees.Add(new Employee { DisplayName = "Rob Finnerty" });
+            //employees.Add(new Employee { DisplayName = "Bill Wrestler" });
+            //employees.Add(new Employee { DisplayName = "Dr. Geri-Beth Hooper" });
+            //employees.Add(new Employee { DisplayName = "Dr. Keith Joyce-Purdy" });
+            //employees.Add(new Employee { DisplayName = "Sheri Spruce" });
+            //employees.Add(new Employee { DisplayName = "Burt Indybrick" });
 
-            EmployeeView.ItemsSource = employees;
+            //EmployeeView.ItemsSource = employees;
         }
     }
 

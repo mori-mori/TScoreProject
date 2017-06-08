@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using SegmentedControl.FormsPlugin.iOS;
 
 namespace morimori.TScore.iOS
 {
@@ -23,6 +24,9 @@ namespace morimori.TScore.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            SegmentedControlRenderer.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

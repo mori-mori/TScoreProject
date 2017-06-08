@@ -11,8 +11,8 @@
 namespace morimori.TScore {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Z:\\Projects\\TennisScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\m" +
-        "orimori.TScore\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Z:\\Projects\\TScoreProject\\TScoreForXamarin\\morimori.TScore\\morimori.TScore\\morimo" +
+        "ri.TScore\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

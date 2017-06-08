@@ -17,16 +17,44 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            //Title = "トーナメント一覧";
+            Title = "Segmented Control";
+            
+            SegControl.ValueChanged += SegControl_ValueChanged;
+        }
 
-            //employees.Add(new Employee { DisplayName = "Rob Finnerty" });
-            //employees.Add(new Employee { DisplayName = "Bill Wrestler" });
-            //employees.Add(new Employee { DisplayName = "Dr. Geri-Beth Hooper" });
-            //employees.Add(new Employee { DisplayName = "Dr. Keith Joyce-Purdy" });
-            //employees.Add(new Employee { DisplayName = "Sheri Spruce" });
-            //employees.Add(new Employee { DisplayName = "Burt Indybrick" });
+        void SegControl_ValueChanged(object sender, EventArgs e)
+        {
+            SegContent.Children.Clear();
 
-            //EmployeeView.ItemsSource = employees;
+            switch (SegControl.SelectedSegment)
+            {
+                case 0:
+                    SegContent.Children.Add(new Label() { Text = "Items tab selected" });
+                    //testLabel.Text = "test1";
+                    break;
+                case 1:
+                    SegContent.Children.Add(new Label() { Text = "Notes tab selected" });
+                    break;
+                case 2:
+                    SegContent.Children.Add(new Label() { Text = "Approvers tab selected" });
+                    break;
+                case 3:
+                    SegContent.Children.Add(new Label() { Text = "Attachments tab selected" });
+                    break;
+            }
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            //SegControl.SelectedSegment = 1;
+
+            //SegControl.TintColor = Color.Purple;
+
+            //SegControl.IsEnabled = false;
+
+            //SegControl.SelectedTextColor = Color.Red;
         }
     }
 

@@ -2,6 +2,10 @@ morimori.TScore.Droid.MainActivity, morimori.TScore.Android;md5b962277364afac146
 morimori.TScore.Droid.MainActivity, morimori.TScore.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b962277364afac14622164bdbe3d2f1f.MainActivity
 morimori.TScore.Droid.MainActivity;md5b962277364afac14622164bdbe3d2f1f.MainActivity
 morimori.tscore.droid.MainActivity;md5b962277364afac14622164bdbe3d2f1f.MainActivity
+SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer, SegmentedControl.FormsPlugin.Android;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
+SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer, SegmentedControl.FormsPlugin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
+SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
+segmentedcontrol.formsplugin.android.SegmentedControlRenderer;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

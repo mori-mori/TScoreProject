@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using SegmentedControl.FormsPlugin.Android;
 
 namespace morimori.TScore.Droid
 {
@@ -20,6 +21,9 @@ namespace morimori.TScore.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            SegmentedControlRenderer.Init();
+
             LoadApplication(new App());
         }
     }

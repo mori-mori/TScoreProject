@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
-        xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
-        xmlns:win="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
+             xmlns:controls="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
+             xmlns:win="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
             Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
              xmlns:local="clr-namespace:morimori.TScore"
              x:Class="morimori.TScore.MainPage">
 
 
-    <StackLayout Margin="20">
-        <Label Text="Native Views Demo" FontAttributes="Bold" HorizontalOptions="Center" />
-        <Entry Placeholder="This Entry is bound to the native switch" IsEnabled="{Binding IsSwitchOn}" />
-        <ios:UIProgressView />
-        <androidWidget:Switch x:Arguments="{x:Static formsAndroid:Forms.Context}"
-            Checked="{Binding Path=IsSwitchOn, Mode=TwoWay, UpdateSourceEventName=CheckedChange}"
-            Text="Enable Entry?" />
-        <win:ToggleSwitch Header="Enable Entry?"
-            OffContent="No"
-            OnContent="Yes"
-            IsOn="{Binding IsSwitchOn, Mode=TwoWay, UpdateSourceEventName=Toggled}" />
+    <StackLayout x:Name="segContainer"
+                 Padding="12"
+                 Spacing="12">
+        <controls:SegmentedControl x:Name="SegControl">
+            <controls:SegmentedControl.Children>
+                <controls:SegmentedControlOption Text="Items" />
+                <controls:SegmentedControlOption Text="Notes" />
+                <controls:SegmentedControlOption Text="Approvers" />
+                <controls:SegmentedControlOption Text="Attachments" />
+            </controls:SegmentedControl.Children>
+        </controls:SegmentedControl>
+        <StackLayout x:Name="SegContent" />
     </StackLayout>
 </ContentPage>

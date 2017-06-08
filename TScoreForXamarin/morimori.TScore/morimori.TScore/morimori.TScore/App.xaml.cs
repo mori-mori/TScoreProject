@@ -3,15 +3,6 @@ using System;
 
 using Xamarin.Forms;
 using System.Threading.Tasks;
-#if __ANDROID__
-using Xamarin.Forms.Platform.Android;
-using NativeTest.Droid;
-using Android.Views;
-#elif __IOS__
-using Xamarin.Forms.Platform.iOS;
-using UIKit;
-using CoreGraphics;
-#endif
 
 namespace morimori.TScore
 {

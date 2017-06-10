@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0E0FBA041EE5A0D90046798E"
-               BuildableName = "TScoreTest.app"
-               BlueprintName = "TScoreTest"
-               ReferencedContainer = "container:TScoreTest.xcodeproj">
+               BlueprintIdentifier = "0ED9EDF41EEC461700FB48BA"
+               BuildableName = "TSocreTest.app"
+               BlueprintName = "TSocreTest"
+               ReferencedContainer = "container:TSocreTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E0FBA041EE5A0D90046798E"
-            BuildableName = "TScoreTest.app"
-            BlueprintName = "TScoreTest"
-            ReferencedContainer = "container:TScoreTest.xcodeproj">
+            BlueprintIdentifier = "0ED9EDF41EEC461700FB48BA"
+            BuildableName = "TSocreTest.app"
+            BlueprintName = "TSocreTest"
+            ReferencedContainer = "container:TSocreTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E0FBA041EE5A0D90046798E"
-            BuildableName = "TScoreTest.app"
-            BlueprintName = "TScoreTest"
-            ReferencedContainer = "container:TScoreTest.xcodeproj">
+            BlueprintIdentifier = "0ED9EDF41EEC461700FB48BA"
+            BuildableName = "TSocreTest.app"
+            BlueprintName = "TSocreTest"
+            ReferencedContainer = "container:TSocreTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E0FBA041EE5A0D90046798E"
-            BuildableName = "TScoreTest.app"
-            BlueprintName = "TScoreTest"
-            ReferencedContainer = "container:TScoreTest.xcodeproj">
+            BlueprintIdentifier = "0ED9EDF41EEC461700FB48BA"
+            BuildableName = "TSocreTest.app"
+            BlueprintName = "TSocreTest"
+            ReferencedContainer = "container:TSocreTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

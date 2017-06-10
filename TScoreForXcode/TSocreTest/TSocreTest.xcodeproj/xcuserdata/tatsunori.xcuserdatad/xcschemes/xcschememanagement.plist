@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TScoreTest.xcscheme</key>
+		<key>TSocreTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E0FBA041EE5A0D90046798E</key>
+		<key>0ED9EDF41EEC461700FB48BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

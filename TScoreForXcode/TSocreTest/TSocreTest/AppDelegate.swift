@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TScoreTest
+//  TSocreTest
 //
-//  Created by Tatsunori on 2017/06/05.
+//  Created by Tatsunori on 2017/06/11.
 //  Copyright © 2017 Tatsunori. All rights reserved.
 //
 

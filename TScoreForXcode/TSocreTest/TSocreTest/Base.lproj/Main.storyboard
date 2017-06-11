@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" title="トーナメント一覧" id="q3e-QG-ofQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wuQ-88-fjw">
                             <connections>
-                                <segue destination="hJF-gw-N0U" kind="show" id="lTB-A2-8g8"/>
+                                <segue destination="hJF-gw-N0U" kind="show" identifier="next_detail" id="lTB-A2-8g8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -57,15 +57,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPL-k6-6bG">
-                                <rect key="frame" x="30" y="134" width="354" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="closeKeyBord:" destination="hJF-gw-N0U" eventType="editingDidEndOnExit" id="Hj8-z8-Lh9"/>
-                                </connections>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-wC-eQI">
                                 <rect key="frame" x="100" y="184" width="214" height="29"/>
                                 <segments>
@@ -79,13 +70,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w2J-qg-5wG">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a7H-4h-lCP">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a7H-4h-lCP">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="par name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-6O-L29">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ペア名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-6O-L29">
                                                 <rect key="frame" x="177" y="0.0" width="177" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -112,13 +103,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-V3-CDj">
                                         <rect key="frame" x="0.0" y="50.333333333333314" width="354" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="A" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Yw-O9-do2">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ライバル名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Yw-O9-do2">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="B" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-wT-7WF">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ライバル名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-wT-7WF">
                                                 <rect key="frame" x="177" y="0.0" width="177" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -226,33 +217,71 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-gl-L3G">
+                                <rect key="frame" x="30" y="134" width="354" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPL-k6-6bG">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="closeKeyBord:" destination="hJF-gw-N0U" eventType="editingDidEndOnExit" id="Hj8-z8-Lh9"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-dn-2J6">
+                                        <rect key="frame" x="118" y="0.0" width="118" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-ZY-OAZ">
+                                        <rect key="frame" x="236" y="0.0" width="118" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u1R-7f-4fq" firstAttribute="centerX" secondItem="FlM-kN-Vta" secondAttribute="centerX" id="3AV-7Y-sPm"/>
+                            <constraint firstItem="5JS-gl-L3G" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="10" id="5oI-O0-itw"/>
                             <constraint firstItem="1p2-wC-eQI" firstAttribute="centerX" secondItem="FlM-kN-Vta" secondAttribute="centerX" id="5uz-N4-S38"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1p2-wC-eQI" secondAttribute="trailing" constant="80" id="71u-NY-WCK"/>
                             <constraint firstItem="1p2-wC-eQI" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="80" id="8Vm-Dy-8p4"/>
                             <constraint firstItem="UNs-uf-fHF" firstAttribute="top" secondItem="u1R-7f-4fq" secondAttribute="bottom" constant="20" id="9rZ-rm-dkG"/>
+                            <constraint firstItem="5JS-gl-L3G" firstAttribute="top" secondItem="7hR-VZ-j6S" secondAttribute="bottom" constant="20" id="LK7-bi-UzI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5JS-gl-L3G" secondAttribute="trailing" constant="10" id="Ngh-3J-bem"/>
                             <constraint firstItem="7hR-VZ-j6S" firstAttribute="centerX" secondItem="FlM-kN-Vta" secondAttribute="centerX" id="P18-NU-dg2"/>
                             <constraint firstItem="u1R-7f-4fq" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="10" id="PFV-qB-GzO"/>
+                            <constraint firstItem="1p2-wC-eQI" firstAttribute="top" secondItem="5JS-gl-L3G" secondAttribute="bottom" constant="20" id="RNA-Ql-euV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u1R-7f-4fq" secondAttribute="trailing" constant="10" id="Ycv-ll-87g"/>
                             <constraint firstItem="UNs-uf-fHF" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="10" id="bp1-Jf-QA7"/>
-                            <constraint firstItem="1p2-wC-eQI" firstAttribute="top" secondItem="uPL-k6-6bG" secondAttribute="bottom" constant="20" id="cDU-3x-46L"/>
                             <constraint firstItem="UNs-uf-fHF" firstAttribute="centerX" secondItem="FlM-kN-Vta" secondAttribute="centerX" id="efY-KM-ySR"/>
-                            <constraint firstItem="uPL-k6-6bG" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="10" id="fbK-IH-qyJ"/>
-                            <constraint firstItem="uPL-k6-6bG" firstAttribute="top" secondItem="7hR-VZ-j6S" secondAttribute="bottom" constant="20" id="hwy-Wz-e0f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uPL-k6-6bG" secondAttribute="trailing" constant="10" id="ixs-Hf-GJt"/>
                             <constraint firstItem="7hR-VZ-j6S" firstAttribute="leading" secondItem="FlM-kN-Vta" secondAttribute="leadingMargin" constant="10" id="jxA-lA-JgC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UNs-uf-fHF" secondAttribute="trailing" constant="10" id="qFF-yi-ya2"/>
                             <constraint firstItem="7hR-VZ-j6S" firstAttribute="top" secondItem="Ydc-JD-VrD" secondAttribute="bottom" constant="20" id="twe-0Z-cD1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7hR-VZ-j6S" secondAttribute="trailing" constant="10" id="u3f-cS-wc2"/>
                             <constraint firstItem="u1R-7f-4fq" firstAttribute="top" secondItem="1p2-wC-eQI" secondAttribute="bottom" constant="20" id="ush-en-KgH"/>
-                            <constraint firstItem="uPL-k6-6bG" firstAttribute="centerX" secondItem="FlM-kN-Vta" secondAttribute="centerX" id="wgb-WZ-8Gs"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="gameDateTextField" destination="uPL-k6-6bG" id="Sas-iY-2yq"/>
+                        <outlet property="gameDateTextField" destination="uPL-k6-6bG" id="jgk-uf-0EI"/>
+                        <outlet property="gameEndTimeTextField" destination="5T9-ZY-OAZ" id="6l4-M1-Cq3"/>
+                        <outlet property="gameNameTextFiled" destination="7hR-VZ-j6S" id="8xc-Tr-RQw"/>
+                        <outlet property="gameStartTimeTextField" destination="hkL-dn-2J6" id="J69-Jk-vAp"/>
+                        <outlet property="myNameTextField" destination="a7H-4h-lCP" id="09q-SS-By5"/>
+                        <outlet property="mySetCount1TextField" destination="ivT-Gs-VZA" id="TNb-zX-zhM"/>
+                        <outlet property="mySetCount2TextField" destination="XDC-qT-vIJ" id="Dhv-eB-54p"/>
+                        <outlet property="mySetCount3TextField" destination="cF2-j2-aU7" id="piX-8w-2hx"/>
+                        <outlet property="pairNameTextFiled" destination="eYX-6O-L29" id="wLX-QE-pVL"/>
+                        <outlet property="rivalANameTextField" destination="2Yw-O9-do2" id="CrJ-C7-IT7"/>
+                        <outlet property="rivalBNameTextField" destination="zkl-wT-7WF" id="yBb-Gm-b2J"/>
+                        <outlet property="rivalSetCount1TextField" destination="7K2-kZ-pUX" id="laR-DC-uOC"/>
+                        <outlet property="rivalSetCount2TextField" destination="58B-MK-y8o" id="ePf-MV-VrC"/>
+                        <outlet property="rivalSetCount3TextField" destination="Mwf-cE-KwS" id="f2t-RM-Qdm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlA-DI-pCD" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -29,6 +29,14 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var remarkTextView: UITextView!
     
+    @IBOutlet weak var singleMyNameTextField: UITextField!
+    @IBOutlet weak var singleRivalNameTextField: UITextField!
+    @IBOutlet weak var singleNameStackView: UIStackView!
+    
+    @IBOutlet weak var doublesNameStackView: UIStackView!
+    @IBOutlet weak var gameTypeSegment: UISegmentedControl!
+    
+    
     
     
     let gameDatePicker = UIDatePicker()
@@ -62,6 +70,13 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         gameStartTimeTextField.inputView = gameStartPicker
         gameEndTimeTextField.inputView = gameEndPicker
         
+        mySetCount1TextField.keyboardType = UIKeyboardType.numberPad
+        rivalSetCount1TextField.keyboardType = UIKeyboardType.numberPad
+        mySetCount2TextField.keyboardType = UIKeyboardType.numberPad
+        rivalSetCount2TextField.keyboardType = UIKeyboardType.numberPad
+        mySetCount3TextField.keyboardType = UIKeyboardType.numberPad
+        rivalSetCount3TextField.keyboardType = UIKeyboardType.numberPad
+        
         // 今日の日付を表示
         getToday()
         getEndTime()
@@ -78,6 +93,18 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         rivalSetCount2TextField.delegate = self
         mySetCount3TextField.delegate = self
         rivalSetCount3TextField.delegate = self
+        singleMyNameTextField.delegate = self
+        singleRivalNameTextField.delegate = self
+        
+        if gameTypeSegment.selectedSegmentIndex == 0 {
+            doublesNameStackView.isHidden = true
+            singleNameStackView.isHidden = false
+        } else {
+            singleNameStackView.isHidden = true
+            doublesNameStackView.isHidden = false
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,12 +134,12 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let formatter = DateFormatter()
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
-        formatter.dateFormat = "yyyy年MM月dd日(EEE） HH時mm分"
+        formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
 //        formatter.dateStyle = .long
         
         let yearAndMonth = formatter.string(from: gameDatePicker.date)
         
-        let currentIndex = yearAndMonth.index(yearAndMonth.endIndex, offsetBy: -7)
+        let currentIndex = yearAndMonth.index(yearAndMonth.endIndex, offsetBy: -6)
         
         
         gameDateTextField.text = yearAndMonth.substring(to: currentIndex)
@@ -124,13 +151,13 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let formatter = DateFormatter()
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
-        formatter.dateFormat = "yyyy年MM月dd日(EEE） HH時mm分"
+        formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
 //        formatter.dateStyle = .long
 //        gameStartTimeTextField.text = formatter.string(from: gameDatePicker.date)
         
         let yearAndMonth = formatter.string(from: gameStartPicker.date)
         
-        let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 15)
+        let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 14)
         
         gameStartTimeTextField.text = yearAndMonth.substring(from: currentIndex)
     }
@@ -141,13 +168,13 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let formatter = DateFormatter()
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
-        formatter.dateFormat = "yyyy年MM月dd日(EEE） HH時mm分"
+        formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
         //        formatter.dateStyle = .long
         //        gameStartTimeTextField.text = formatter.string(from: gameDatePicker.date)
         
         let yearAndMonth = formatter.string(from: gameEndPicker.date)
         
-        let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 15)
+        let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 14)
         
         gameEndTimeTextField.text = yearAndMonth.substring(from: currentIndex)
     }
@@ -163,6 +190,15 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         return true
     }
    
+    @IBAction func selectedSegmentIndex(_ sender: Any) {
+        if gameTypeSegment.selectedSegmentIndex == 0 {
+            doublesNameStackView.isHidden = true
+            singleNameStackView.isHidden = false
+        } else {
+            singleNameStackView.isHidden = true
+            doublesNameStackView.isHidden = false
+        }
+    }
 
     /*
     // MARK: - Navigation

@@ -13,19 +13,22 @@
         <!--トーナメント一覧-->
         <scene sceneID="L3N-OZ-nBK">
             <objects>
-                <tableViewController id="WgK-aL-Njd" sceneMemberID="viewController">
+                <tableViewController id="WgK-aL-Njd" customClass="GameListViewController" customModule="TSocreTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0aW-eW-MEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Q26-Gh-y4o">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Q26-Gh-y4o">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q26-Gh-y4o" id="Yk9-11-KLz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hJF-gw-N0U" kind="show" identifier="cellPushNextDetailView" id="bQu-nU-qcN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +39,7 @@
                     <navigationItem key="navigationItem" title="トーナメント一覧" id="q3e-QG-ofQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wuQ-88-fjw">
                             <connections>
-                                <segue destination="hJF-gw-N0U" kind="show" identifier="next_detail" id="lTB-A2-8g8"/>
+                                <segue destination="hJF-gw-N0U" kind="show" identifier="nextDetailView" id="lTB-A2-8g8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -45,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="614" y="138"/>
         </scene>
-        <!--Game Detail View Controller-->
+        <!--Title-->
         <scene sceneID="87A-Vg-7Ye">
             <objects>
                 <viewController id="hJF-gw-N0U" customClass="GameDetailViewController" customModule="TSocreTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +195,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="メモ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5XD-nN-pqg">
-                                <rect key="frame" x="30" y="442.33333333333326" width="354" height="273.66666666666674"/>
+                                <rect key="frame" x="30" y="442.33333333333326" width="354" height="229.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -324,6 +327,11 @@
                             <constraint firstItem="u1R-7f-4fq" firstAttribute="top" secondItem="1p2-wC-eQI" secondAttribute="bottom" constant="20" id="ush-en-KgH"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="gUg-c9-5dv">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="E61-Dp-mrp"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="doublesNameStackView" destination="u1R-7f-4fq" id="s6y-t2-ldo"/>
                         <outlet property="gameDateTextField" destination="uPL-k6-6bG" id="jgk-uf-0EI"/>
@@ -386,4 +394,7 @@
             <point key="canvasLocation" x="-338" y="138"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bQu-nU-qcN"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -199,6 +199,10 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             doublesNameStackView.isHidden = false
         }
     }
+    
+    
+    
+  
 
     /*
     // MARK: - Navigation

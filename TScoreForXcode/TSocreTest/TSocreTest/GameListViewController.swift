@@ -11,7 +11,7 @@ import UIKit
 class GameListViewController: UITableViewController {
 
     
-    let array = ["天丼","カレー","うな丼","おにぎり","味噌汁"]// 新しく付け足した
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +42,23 @@ class GameListViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! CustomTableViewCell
 
-       cell.textLabel?.text = array[indexPath.row]// 新しく付け足した
+        //cell.textLabel?.text = array[indexPath.row]// 新しく付け足した
 
+//        cell.gameNameLabel.text = "morimori"
+//        cell.ribalNameLabel.text = "hara"
+        
+        
+        
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "cellPushNextDetailView") {
             let secondVC: GameDetailViewController = (segue.destination as? GameDetailViewController)!
+            
+            
             
             // 11. SecondViewControllerのtextに選択した文字列を設定する
         

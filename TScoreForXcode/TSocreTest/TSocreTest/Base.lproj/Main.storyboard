@@ -14,19 +14,70 @@
         <scene sceneID="L3N-OZ-nBK">
             <objects>
                 <tableViewController id="WgK-aL-Njd" customClass="GameListViewController" customModule="TSocreTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0aW-eW-MEe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="0aW-eW-MEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Q26-Gh-y4o">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Q26-Gh-y4o" customClass="CustomTableViewCell" customModule="TSocreTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q26-Gh-y4o" id="Yk9-11-KLz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k5y-hN-2UM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hyb-jY-mTy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="春日井市民大会１回戦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-H7-4Tr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="207" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/06/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePl-YX-9Sn">
+                                                            <rect key="frame" x="207" y="0.0" width="207" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="COk-mg-xpF">
+                                                    <rect key="frame" x="0.0" y="40" width="414" height="39.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS  木村拓哉　中居正広" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-MJ-q71">
+                                                            <rect key="frame" x="0.0" y="0.0" width="207" height="39.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6-0  6-1  6-4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtU-yY-zEg">
+                                                            <rect key="frame" x="207" y="0.0" width="207" height="39.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k5y-hN-2UM" firstAttribute="leading" secondItem="Yk9-11-KLz" secondAttribute="leading" id="QLb-KA-qKs"/>
+                                        <constraint firstAttribute="trailing" secondItem="k5y-hN-2UM" secondAttribute="trailing" id="WMM-8v-9K4"/>
+                                        <constraint firstAttribute="bottom" secondItem="k5y-hN-2UM" secondAttribute="bottom" id="bFV-a5-CH5"/>
+                                        <constraint firstItem="k5y-hN-2UM" firstAttribute="top" secondItem="Yk9-11-KLz" secondAttribute="top" id="oxS-VJ-0iv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="gameDateLabel" destination="ePl-YX-9Sn" id="YMB-gU-LTo"/>
+                                    <outlet property="gameNameLabel" destination="fgI-H7-4Tr" id="doG-xo-bCd"/>
+                                    <outlet property="gameScoreLabel" destination="QtU-yY-zEg" id="3yf-3Q-R7c"/>
+                                    <outlet property="rivalNameLabel" destination="c2T-MJ-q71" id="OfA-ll-Eiy"/>
                                     <segue destination="hJF-gw-N0U" kind="show" identifier="cellPushNextDetailView" id="bQu-nU-qcN"/>
                                 </connections>
                             </tableViewCell>
@@ -46,7 +97,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJu-V6-Foz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="138"/>
+            <point key="canvasLocation" x="613.04347826086962" y="136.95652173913044"/>
         </scene>
         <!--Title-->
         <scene sceneID="87A-Vg-7Ye">
@@ -375,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hT5-ab-qqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="144"/>
+            <point key="canvasLocation" x="734.78260869565224" y="800.54347826086962"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BUf-jz-6hQ">

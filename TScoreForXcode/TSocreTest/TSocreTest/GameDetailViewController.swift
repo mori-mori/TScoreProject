@@ -15,6 +15,7 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var gameStartTimeTextField: UITextField!  // 試合開始時間
     @IBOutlet weak var gameEndTimeTextField: UITextField!    // 試合終了時間
+    @IBOutlet weak var gamePlaceTextField: UITextField!      // 試合会場
     
     @IBOutlet weak var myNameTextField: UITextField!         // 自分の名前
     @IBOutlet weak var pairNameTextFiled: UITextField!       // ペアの名前

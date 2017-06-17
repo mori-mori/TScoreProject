@@ -38,7 +38,7 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var gameTypeSegment: UISegmentedControl!
     
     
-    
+    var gameData: GameData?
     
     let gameDatePicker = UIDatePicker()
     let gameStartPicker = UIDatePicker()
@@ -46,6 +46,44 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if gameData == nil {
+            // 今日の日付を表示
+            getToday()
+            getEndTime()
+            getStartTime()
+        } else {
+            gameNameTextFiled.text = gameData?.gameName
+            gameDateTextField.text = gameData?.gameDate
+            gameStartTimeTextField.text = gameData?.gameStartTime
+            gameEndTimeTextField.text = gameData?.gameEndTime
+            gamePlaceTextField.text = gameData?.gamePlace
+            
+            if Int((gameData?.gameType)!)! == 0 {
+                gameTypeSegment.selectedSegmentIndex = 0
+                singleNameStackView.isHidden = true
+                doublesNameStackView.isHidden = false
+                singleMyNameTextField.text = gameData?.myName
+                singleRivalNameTextField.text = gameData?.rivalAName
+            } else {
+                gameTypeSegment.selectedSegmentIndex = 1
+                singleNameStackView.isHidden = false
+                doublesNameStackView.isHidden = true
+                myNameTextField.text = gameData?.myName
+                pairNameTextFiled.text = gameData?.pairName
+                rivalANameTextField.text = gameData?.rivalAName
+                rivalBNameTextField.text = gameData?.rivalBName
+            }
+            
+            mySetCount1TextField.text = gameData?.mySetCount1
+            rivalSetCount1TextField.text = gameData?.rivalSetCount1
+            mySetCount2TextField.text = gameData?.mySetCount2
+            rivalSetCount2TextField.text = gameData?.rivalSetCount2
+            mySetCount3TextField.text = gameData?.mySetCount3
+            rivalSetCount3TextField.text = gameData?.rivalSetCount3
+            remarkTextView.text = gameData?.remark
+        }
+        
         
         remarkTextView.layer.borderWidth = 0.1
         remarkTextView.layer.cornerRadius = 10.0
@@ -79,9 +117,9 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         rivalSetCount3TextField.keyboardType = UIKeyboardType.numberPad
         
         // 今日の日付を表示
-        getToday()
-        getEndTime()
-        getStartTime()
+//        getToday()
+//        getEndTime()
+//        getStartTime()
         
         gameNameTextFiled.delegate = self
         myNameTextField.delegate = self

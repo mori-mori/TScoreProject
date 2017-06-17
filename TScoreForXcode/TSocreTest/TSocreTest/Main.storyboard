@@ -77,7 +77,7 @@
                                     <outlet property="gameNameLabel" destination="fgI-H7-4Tr" id="doG-xo-bCd"/>
                                     <outlet property="gameScoreLabel" destination="QtU-yY-zEg" id="3yf-3Q-R7c"/>
                                     <outlet property="rivalNameLabel" destination="c2T-MJ-q71" id="OfA-ll-Eiy"/>
-                                    <segue destination="hJF-gw-N0U" kind="show" identifier="cellPushNextDetailView" id="bQu-nU-qcN"/>
+                                    <segue destination="hJF-gw-N0U" kind="show" identifier="cellPushNextDetailView" id="UEa-ef-fRF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -454,6 +454,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bQu-nU-qcN"/>
+        <segue reference="UEa-ef-fRF"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 
 class GameListViewController: UITableViewController {
 
-    
+    var data: GameData?
 
     
     override func viewDidLoad() {
@@ -32,12 +32,12 @@ class GameListViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return GameDataManagwer.sharedInstance.gameArrayList.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return GameDataManagwer.sharedInstance.gameArrayList.count
     }
 
     
@@ -46,7 +46,9 @@ class GameListViewController: UITableViewController {
 
 //        cell.textLabel?.text = array[indexPath.row]// 新しく付け足した
         
-        let gameData = GameDataManagwer.sharedInstance.gameArrayList[indexPath.row]
+        let index = indexPath.row
+        
+        let gameData = GameDataManagwer.sharedInstance.gameArrayList[index]
         
         cell.gameNameLabel.text = gameData.gameName
         cell.gameDateLabel.text = gameData.gameDate
@@ -66,20 +68,27 @@ class GameListViewController: UITableViewController {
         if (segue.identifier == "cellPushNextDetailView") {
             let secondVC: GameDetailViewController = (segue.destination as? GameDetailViewController)!
             
+            let indexPath = self.tableView.indexPathForSelectedRow!
             
+            let index = indexPath.row
             
-            // 11. SecondViewControllerのtextに選択した文字列を設定する
-        
+            secondVC.gameData = GameDataManagwer.sharedInstance.gameArrayList[index]
+            
         }
     }
     
     
 //    override func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
 //        
+//        data = GameDataManagwer.sharedInstance.gameArrayList[indexPath.row]
 //        performSegue(withIdentifier: "cellPushNextDetailView",sender: nil)
-//       
+//        
+//        let nextVC:GameDetailViewController = GameDetailViewController()
+//        self.present(nextVC, animated: true, completion: nil)
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        
 //    }
-    
+//    
 
     /*
     // Override to support conditional editing of the table view.

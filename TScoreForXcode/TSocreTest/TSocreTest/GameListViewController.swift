@@ -16,11 +16,11 @@ class GameListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       
+        
+        GameDataManagwer.sharedInstance.LoadGameList()
+      
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,7 @@ class GameListViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return GameDataManagwer.sharedInstance.gameArrayList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +44,15 @@ class GameListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! CustomTableViewCell
 
-        //cell.textLabel?.text = array[indexPath.row]// 新しく付け足した
+//        cell.textLabel?.text = array[indexPath.row]// 新しく付け足した
+        
+        let gameData = GameDataManagwer.sharedInstance.gameArrayList[indexPath.row]
+        
+        cell.gameNameLabel.text = gameData.gameName
+        cell.gameDateLabel.text = gameData.gameDate
+    
+        cell.rivalNameLabel.text = gameData.rivalAName
+        cell.gameScoreLabel.text = gameData.mySetCount1! + "-" + gameData.rivalSetCount1!
 
 //        cell.gameNameLabel.text = "morimori"
 //        cell.ribalNameLabel.text = "hara"

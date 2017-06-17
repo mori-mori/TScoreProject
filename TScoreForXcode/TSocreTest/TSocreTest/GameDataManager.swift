@@ -49,3 +49,44 @@ class GameData {
         remark = gameList[16]
     }
 }
+
+
+class GameDataManagwer {
+    
+    static let sharedInstance = GameDataManagwer()
+    
+     var gameArrayList = [GameData]()
+    
+    
+    func LoadGameList() {
+    
+  
+        gameArrayList.removeAll()
+        
+        // csvファイルパスを取得
+        if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
+            
+            // csvデータ読み込み
+            do {
+                let csvStringData: String = try String(contentsOfFile: csvFilePath, encoding: String.Encoding.utf8)
+                
+                // csvデータを一行ずつ読み込む
+                csvStringData.enumerateLines(invoking: { (line, stop) -> () in
+                    
+                    // カンマ区切りで分割
+                    let gameData = line.components(separatedBy: ",")
+                    
+                    // 問題データを格納するオブジェクトを作成
+                    let gameDetail = GameData(gameList: gameData)
+                    
+                    // 問題を追加
+                    self.gameArrayList.append(gameDetail)
+                })
+            } catch let error {
+                // ファイル読み込みエラー時
+                print(error)
+            }
+        }
+        
+    }
+}

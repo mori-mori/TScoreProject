@@ -19,10 +19,14 @@ class GameListViewController: UITableViewController {
        
         
         GameDataManagwer.sharedInstance.LoadGameList()
-      
+    
         
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

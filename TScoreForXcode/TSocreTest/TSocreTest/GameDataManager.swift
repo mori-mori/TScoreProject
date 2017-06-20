@@ -61,16 +61,27 @@ class GameDataManagwer {
     
         gameArrayList.removeAll()
         
+        let textFileName = "gameList.csv"
+        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last
         
-        let path1 = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as Array<String>
-        print(path1[0])
+        let targetTextFilePath = path! + "/" + textFileName
+
+        print(targetTextFilePath)
+        
+        if !FileManager.default.fileExists(atPath: targetTextFilePath) {
+            
+            return
+        }
+        
+        
+        //print(path1[0])
         
         // csvファイルパスを取得
         //if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
             
             // csvデータ読み込み
             do {
-                let csvStringData: String = try String(contentsOfFile: "/" + path1[0] + "gameList.csv", encoding: String.Encoding.utf8)
+                let csvStringData: String = try String(contentsOfFile: targetTextFilePath, encoding: String.Encoding.utf8)
                 
                 // csvデータを一行ずつ読み込む
                 csvStringData.enumerateLines(invoking: { (line, stop) -> () in

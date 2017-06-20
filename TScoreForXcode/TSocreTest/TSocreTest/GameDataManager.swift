@@ -57,18 +57,20 @@ class GameDataManagwer {
     
      var gameArrayList = [GameData]()
     
-    
     func LoadGameList() {
     
-  
         gameArrayList.removeAll()
         
+        
+        let path1 = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as Array<String>
+        print(path1[0])
+        
         // csvファイルパスを取得
-        if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
+        //if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
             
             // csvデータ読み込み
             do {
-                let csvStringData: String = try String(contentsOfFile: csvFilePath, encoding: String.Encoding.utf8)
+                let csvStringData: String = try String(contentsOfFile: "/" + path1[0] + "gameList.csv", encoding: String.Encoding.utf8)
                 
                 // csvデータを一行ずつ読み込む
                 csvStringData.enumerateLines(invoking: { (line, stop) -> () in
@@ -86,7 +88,7 @@ class GameDataManagwer {
                 // ファイル読み込みエラー時
                 print(error)
             }
-        }
+        //}
         
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E110FE41EF55A6F00301D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E110FE31EF55A6F00301D52 /* Main.storyboard */; };
-		0E1AEA1C1EF4F69200701593 /* gameList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0E1AEA1B1EF4F69200701593 /* gameList.csv */; };
 		0E2EDA251EF4BB9800182071 /* GameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EDA241EF4BB9800182071 /* GameDataManager.swift */; };
 		0E4F54E71EF3D8DC0053434A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F54E61EF3D8DC0053434A /* CustomTableViewCell.swift */; };
 		0EBCB9E11EF13D6300605412 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCB9E01EF13D6300605412 /* GameListViewController.swift */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		0E110FE31EF55A6F00301D52 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		0E1AEA1B1EF4F69200701593 /* gameList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gameList.csv; sourceTree = "<group>"; };
 		0E2EDA241EF4BB9800182071 /* GameDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataManager.swift; sourceTree = "<group>"; };
 		0E4F54E61EF3D8DC0053434A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0EBCB9E01EF13D6300605412 /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				0ED9EDFF1EEC461700FB48BA /* Assets.xcassets */,
 				0ED9EE011EEC461700FB48BA /* LaunchScreen.storyboard */,
 				0ED9EE041EEC461700FB48BA /* Info.plist */,
-				0E1AEA1B1EF4F69200701593 /* gameList.csv */,
 			);
 			path = TSocreTest;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1AEA1C1EF4F69200701593 /* gameList.csv in Resources */,
 				0ED9EE031EEC461700FB48BA /* LaunchScreen.storyboard in Resources */,
 				0ED9EE001EEC461700FB48BA /* Assets.xcassets in Resources */,
 				0E110FE41EF55A6F00301D52 /* Main.storyboard in Resources */,

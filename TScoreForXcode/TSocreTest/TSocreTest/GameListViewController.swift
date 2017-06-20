@@ -72,6 +72,8 @@ class GameListViewController: UITableViewController {
             
             let index = indexPath.row
             
+            GameDataManagwer.sharedInstance.gameArrayList[index].index = index
+            
             secondVC.gameData = GameDataManagwer.sharedInstance.gameArrayList[index]
             
         }

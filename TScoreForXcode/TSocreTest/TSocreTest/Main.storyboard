@@ -405,7 +405,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="gUg-c9-5dv">
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="E61-Dp-mrp"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="E61-Dp-mrp">
+                            <connections>
+                                <action selector="saveGameData:" destination="hJF-gw-N0U" id="Q5P-pa-Ygw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

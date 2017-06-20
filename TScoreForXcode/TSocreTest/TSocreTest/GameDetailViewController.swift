@@ -240,6 +240,89 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    @IBAction func saveGameData(_ sender: Any) {
+        
+    
+        let gameType: String? = gameTypeSegment.selectedSegmentIndex.description
+        var myName: String?
+        var pairName: String?
+        var rivalAName: String?
+        var rivalBName: String?
+        
+        if gameTypeSegment.selectedSegmentIndex == 0 {
+            // single
+            myName = singleMyNameTextField.text
+            pairName = ""
+            rivalAName = singleRivalNameTextField.text
+            rivalBName = ""
+            
+        } else {
+            // doubles
+            myName = myNameTextField.text
+            pairName = pairNameTextFiled.text
+            rivalAName = rivalANameTextField.text
+            rivalBName = rivalBNameTextField.text
+        }
+        
+        let gameDetail = [gameNameTextFiled.text, gameDateTextField.text, gameStartTimeTextField.text, gameEndTimeTextField.text, gamePlaceTextField.text, gameType, myName, pairName, rivalAName, rivalBName, mySetCount1TextField.text, rivalSetCount1TextField.text, mySetCount2TextField.text, rivalSetCount2TextField.text, mySetCount3TextField.text, rivalSetCount3TextField.text, remarkTextView.text]
+
+        let newGame = GameData(gameList: gameDetail as! [String])
+        
+        
+        if gameData?.index != nil {
+            GameDataManagwer.sharedInstance.gameArrayList.remove(at: 0)
+        }
+        
+        GameDataManagwer.sharedInstance.gameArrayList.insert(newGame, at: 0)
+        
+       
+        for (item) in GameDataManagwer.sharedInstance.gameArrayList.enumerated() {
+            
+            let line: String? = "\(item.element.gameName!),\(item.element.gameDate!),\(item.element.gamePlace!),\(item.element.gameStartTime!),\(item.element.gameEndTime!),\(item.element.gameType!)),\(item.element.myName!),\(item.element.pairName!),\(item.element.rivalAName!),\(item.element.rivalBName!),\(item.element.mySetCount1!),\(item.element.rivalSetCount1!),\(item.element.mySetCount2!),\(item.element.rivalSetCount2!),\(item.element.mySetCount3!),\(item.element.rivalSetCount3!)"
+            
+            
+//            let path1 = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as Array<String>
+//
+//            
+//            let manager = FileManager()
+//            let boo: Bool = manager.fileExists(atPath: path1[0] + "/" + "gameList.csv")
+            
+            
+            let textFileName = "gameList.csv"
+//            let initialText = "最初に書き込むテキスト"
+            
+            // Documentディレクトリのパスを文字列で取得
+            if let documentDirectoryFileURL = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last {
+                
+                let targetTextFilePath = documentDirectoryFileURL + "/" + textFileName
+                
+                print("書き込むファイルのパス: \(targetTextFilePath)")
+                
+                do {
+                    try line!.write(toFile: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
+                } catch let error as NSError {
+                    print("failed to write: \(error)")
+                }
+            }
+            
+            // csvファイルパスを取得
+            //if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
+                //print(csvFilePath)
+
+//            
+//                // csvデータ読み込み
+//                do {
+//                    let csvStringData: String = try String(contentsOfFile: path1[0] + "/" + "gameList.csv", encoding: String.Encoding.utf8)
+//
+//                    try line?.write(toFile: csvStringData, atomically: true, encoding: String.Encoding.utf8)
+//                    
+//                } catch let error {
+//                    // ファイル読み込みエラー時
+//                    print(error)
+//                }
+           // }
+        }
+    }
     
   
 

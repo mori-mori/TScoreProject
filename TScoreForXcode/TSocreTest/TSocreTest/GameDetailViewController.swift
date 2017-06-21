@@ -84,10 +84,8 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             remarkTextView.text = gameData?.remark
         }
         
-        
         remarkTextView.layer.borderWidth = 0.1
         remarkTextView.layer.cornerRadius = 10.0
-        
         
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -116,11 +114,6 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         mySetCount3TextField.keyboardType = UIKeyboardType.numberPad
         rivalSetCount3TextField.keyboardType = UIKeyboardType.numberPad
         
-        // 今日の日付を表示
-//        getToday()
-//        getEndTime()
-//        getStartTime()
-        
         gameNameTextFiled.delegate = self
         myNameTextField.delegate = self
         pairNameTextFiled.delegate = self
@@ -142,15 +135,12 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             singleNameStackView.isHidden = true
             doublesNameStackView.isHidden = false
         }
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func datePickerValueChanged(sender: UIDatePicker) {
         
@@ -161,8 +151,6 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         } else if sender == gameEndPicker {
             getEndTime()
         }
-        
-        //getToday()
     }
     
     func doneBarButton() {
@@ -174,16 +162,12 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
         formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
-//        formatter.dateStyle = .long
         
         let yearAndMonth = formatter.string(from: gameDatePicker.date)
         
         let currentIndex = yearAndMonth.index(yearAndMonth.endIndex, offsetBy: -6)
         
-        
         gameDateTextField.text = yearAndMonth.substring(to: currentIndex)
-        
-//        gameDateTextField.text = formatter.string(from: gameDatePicker.date)
     }
     
     func getStartTime() {
@@ -191,8 +175,6 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
         formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
-//        formatter.dateStyle = .long
-//        gameStartTimeTextField.text = formatter.string(from: gameDatePicker.date)
         
         let yearAndMonth = formatter.string(from: gameStartPicker.date)
         
@@ -201,15 +183,11 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         gameStartTimeTextField.text = yearAndMonth.substring(from: currentIndex)
     }
     
-    
-    
     func getEndTime() {
         let formatter = DateFormatter()
         let jaLocale = Locale(identifier: "ja_JP")
         formatter.locale = jaLocale
         formatter.dateFormat = "yyyy/MM/dd(EEE） HH:mm"
-        //        formatter.dateStyle = .long
-        //        gameStartTimeTextField.text = formatter.string(from: gameDatePicker.date)
         
         let yearAndMonth = formatter.string(from: gameEndPicker.date)
         
@@ -218,10 +196,6 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         gameEndTimeTextField.text = yearAndMonth.substring(from: currentIndex)
     }
 
-    
-    
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
         
         textField.resignFirstResponder()
@@ -238,11 +212,9 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             doublesNameStackView.isHidden = false
         }
     }
-    
-    
+
     @IBAction func saveGameData(_ sender: Any) {
         
-    
         let gameType: String? = gameTypeSegment.selectedSegmentIndex.description
         var myName: String?
         var pairName: String?
@@ -268,48 +240,14 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
 
         let newGame = GameData(gameList: gameDetail as! [String])
         
-        
         if gameData?.index != nil {
             GameDataManagwer.sharedInstance.gameArrayList.remove(at: 0)
         }
         
         GameDataManagwer.sharedInstance.gameArrayList.insert(newGame, at: 0)
         
-       var line: String? = ""
-        for (item) in GameDataManagwer.sharedInstance.gameArrayList.enumerated() {
-            
-            line = line! + "\(item.element.gameName!),\(item.element.gameDate!),\(item.element.gameStartTime!),\(item.element.gameEndTime!),\(item.element.gamePlace!),\(item.element.gameType!),\(item.element.myName!),\(item.element.pairName!),\(item.element.rivalAName!),\(item.element.rivalBName!),\(item.element.mySetCount1!),\(item.element.rivalSetCount1!),\(item.element.mySetCount2!),\(item.element.rivalSetCount2!),\(item.element.mySetCount3!),\(item.element.rivalSetCount3!),\(item.element.remark!)\n"
-        }
+        GameDataManagwer.sharedInstance.updateCSVFile()
         
-        let textFileName = "gameList.csv"
-        
-        // Documentディレクトリのパスを文字列で取得
-        if let documentDirectoryFileURL = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last {
-            
-            let targetTextFilePath = documentDirectoryFileURL + "/" + textFileName
-            
-            print("書き込むファイルのパス: \(targetTextFilePath)")
-            
-            do {
-                try line!.write(toFile: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
-            } catch let error as NSError {
-                print("failed to write: \(error)")
-            }
-        }
-
         self.navigationController?.popViewController(animated: true)
     }
-    
-  
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

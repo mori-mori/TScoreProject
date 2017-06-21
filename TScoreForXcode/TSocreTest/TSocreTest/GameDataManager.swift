@@ -66,34 +66,25 @@ class GameDataManagwer {
         
         let targetTextFilePath = path! + "/" + textFileName
 
-        print(targetTextFilePath)
-        
         if !FileManager.default.fileExists(atPath: targetTextFilePath) {
-            
             return
         }
         
-        
-        //print(path1[0])
-        
-        // csvファイルパスを取得
-        //if let csvFilePath = Bundle.main.path(forResource: "gameList", ofType: "csv") {
-            
-            // csvデータ読み込み
-            do {
-                let csvStringData: String = try String(contentsOfFile: targetTextFilePath, encoding: String.Encoding.utf8)
+        // csvデータ読み込み
+        do {
+            let csvStringData: String = try String(contentsOfFile: targetTextFilePath, encoding: String.Encoding.utf8)
                 
-                // csvデータを一行ずつ読み込む
-                csvStringData.enumerateLines(invoking: { (line, stop) -> () in
+            // csvデータを一行ずつ読み込む
+            csvStringData.enumerateLines(invoking: { (line, stop) -> () in
                     
-                    // カンマ区切りで分割
-                    let gameData = line.components(separatedBy: ",")
+            // カンマ区切りで分割
+            let gameData = line.components(separatedBy: ",")
+                
+                // 問題データを格納するオブジェクトを作成
+                let gameDetail = GameData(gameList: gameData)
                     
-                    // 問題データを格納するオブジェクトを作成
-                    let gameDetail = GameData(gameList: gameData)
-                    
-                    // 問題を追加
-                    self.gameArrayList.append(gameDetail)
+                // 問題を追加
+                self.gameArrayList.append(gameDetail)
                 })
             } catch let error {
                 // ファイル読み込みエラー時
@@ -114,8 +105,6 @@ class GameDataManagwer {
         if let documentDirectoryFileURL = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last {
             
             let targetTextFilePath = documentDirectoryFileURL + "/" + textFileName
-            
-            print("書き込むファイルのパス: \(targetTextFilePath)")
             
             do {
                 try line!.write(toFile: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)

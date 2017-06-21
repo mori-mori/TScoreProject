@@ -53,10 +53,11 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             getEndTime()
             getStartTime()
         } else {
+            
             gameNameTextFiled.text = gameData?.gameName
             gameDateTextField.text = gameData?.gameDate
-            gameStartTimeTextField.text = gameData?.gameStartTime
-            gameEndTimeTextField.text = gameData?.gameEndTime
+            gameStartTimeTextField.text = "開始      " + (gameData?.gameStartTime)!
+            gameEndTimeTextField.text = "終了      " + (gameData?.gameEndTime)!
             gamePlaceTextField.text = gameData?.gamePlace
             
             if Int((gameData?.gameType)!)! == 0 {
@@ -89,7 +90,7 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        let toolBarBtn = UIBarButtonItem(title: "DONE", style: .plain, target: self, action: #selector(GameDetailViewController.doneBarButton))
+        let toolBarBtn = UIBarButtonItem(title: "閉じる", style: .plain, target: self, action: #selector(GameDetailViewController.doneBarButton))
         toolBar.items = [toolBarBtn]
         gameDateTextField.inputAccessoryView = toolBar
         
@@ -180,7 +181,7 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         
         let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 14)
         
-        gameStartTimeTextField.text = yearAndMonth.substring(from: currentIndex)
+        gameStartTimeTextField.text = "開始      " + yearAndMonth.substring(from: currentIndex)
     }
     
     func getEndTime() {
@@ -193,7 +194,7 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         
         let currentIndex = yearAndMonth.index(yearAndMonth.startIndex, offsetBy: 14)
         
-        gameEndTimeTextField.text = yearAndMonth.substring(from: currentIndex)
+        gameEndTimeTextField.text = "終了      " + yearAndMonth.substring(from: currentIndex)
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{

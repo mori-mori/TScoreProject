@@ -54,11 +54,24 @@ class GameListViewController: UITableViewController {
         
         let gameData = GameDataManagwer.sharedInstance.gameArrayList[index]
         
-        cell.gameNameLabel.text = gameData.gameName
-        cell.gameDateLabel.text = gameData.gameDate
+        cell.gameNameLabel.text = gameData.gameName!
+        cell.gameDateLabel.text = gameData.gameDate!
     
-        cell.rivalNameLabel.text = gameData.rivalAName
-        cell.gameScoreLabel.text = gameData.mySetCount1! + "-" + gameData.rivalSetCount1!
+        let rivalName: String = "vs " + gameData.rivalAName! + " " + gameData.rivalBName!
+        
+        cell.rivalNameLabel.text = rivalName
+        
+        var count: String = gameData.mySetCount1! + "-" + gameData.rivalSetCount1!
+        
+        if Int(gameData.mySetCount2!) != 0 || Int(gameData.rivalSetCount2!) != 0 {
+            count = count + " " + gameData.mySetCount2! + "-" + gameData.rivalSetCount2!
+        }
+        
+        if Int(gameData.mySetCount3!) != 0 || Int(gameData.rivalSetCount3!) != 0 {
+            count = count + " " + gameData.mySetCount3! + "-" + gameData.rivalSetCount3!
+        }
+        
+        cell.gameScoreLabel.text = count
 
 //        cell.gameNameLabel.text = "morimori"
 //        cell.ribalNameLabel.text = "hara"
@@ -80,6 +93,14 @@ class GameListViewController: UITableViewController {
             
             secondVC.gameData = GameDataManagwer.sharedInstance.gameArrayList[index]
             
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            GameDataManagwer.sharedInstance.gameArrayList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            GameDataManagwer.sharedInstance.updateCSVFile()
         }
     }
     

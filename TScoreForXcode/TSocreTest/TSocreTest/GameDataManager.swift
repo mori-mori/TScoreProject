@@ -98,8 +98,30 @@ class GameDataManagwer {
             } catch let error {
                 // ファイル読み込みエラー時
                 print(error)
-            }
-        //}
+        }
+    }
+    
+    func updateCSVFile() {
+        var line: String? = ""
+        for (item) in GameDataManagwer.sharedInstance.gameArrayList.enumerated() {
+            
+            line = line! + "\(item.element.gameName!),\(item.element.gameDate!),\(item.element.gameStartTime!),\(item.element.gameEndTime!),\(item.element.gamePlace!),\(item.element.gameType!),\(item.element.myName!),\(item.element.pairName!),\(item.element.rivalAName!),\(item.element.rivalBName!),\(item.element.mySetCount1!),\(item.element.rivalSetCount1!),\(item.element.mySetCount2!),\(item.element.rivalSetCount2!),\(item.element.mySetCount3!),\(item.element.rivalSetCount3!),\(item.element.remark!)\n"
+        }
         
+        let textFileName = "gameList.csv"
+        
+        // Documentディレクトリのパスを文字列で取得
+        if let documentDirectoryFileURL = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last {
+            
+            let targetTextFilePath = documentDirectoryFileURL + "/" + textFileName
+            
+            print("書き込むファイルのパス: \(targetTextFilePath)")
+            
+            do {
+                try line!.write(toFile: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
+            } catch let error as NSError {
+                print("failed to write: \(error)")
+            }
+        }
     }
 }

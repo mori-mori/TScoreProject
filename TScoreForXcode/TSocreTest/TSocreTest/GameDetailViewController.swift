@@ -91,8 +91,12 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
         let toolBarBtn = UIBarButtonItem(title: "閉じる", style: .plain, target: self, action: #selector(GameDetailViewController.doneBarButton))
-        toolBar.items = [toolBarBtn]
+        let toolbarbuttongap = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        toolBar.items = [toolbarbuttongap, toolBarBtn]
+        
         gameDateTextField.inputAccessoryView = toolBar
+        gameStartTimeTextField.inputAccessoryView = toolBar
+        gameEndTimeTextField.inputAccessoryView = toolBar
         
         gameDatePicker.datePickerMode = UIDatePickerMode.date
         gameDatePicker.addTarget(self, action: #selector(GameDetailViewController.datePickerValueChanged(sender:)), for: .valueChanged)
@@ -156,6 +160,8 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
     
     func doneBarButton() {
         gameDateTextField.resignFirstResponder()
+        gameStartTimeTextField.resignFirstResponder()
+        gameEndTimeTextField.resignFirstResponder()
     }
     
     func getToday() {

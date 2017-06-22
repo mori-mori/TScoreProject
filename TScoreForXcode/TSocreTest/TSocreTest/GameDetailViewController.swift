@@ -243,7 +243,17 @@ class GameDetailViewController: UIViewController, UITextFieldDelegate {
             rivalBName = rivalBNameTextField.text
         }
         
-        let gameDetail = [gameNameTextFiled.text, gameDateTextField.text, gameStartTimeTextField.text, gameEndTimeTextField.text, gamePlaceTextField.text, gameType, myName, pairName, rivalAName, rivalBName, mySetCount1TextField.text, rivalSetCount1TextField.text, mySetCount2TextField.text, rivalSetCount2TextField.text, mySetCount3TextField.text, rivalSetCount3TextField.text, remarkTextView.text]
+        
+        let startTime = gameStartTimeTextField.text!
+        let startIndex = startTime.index(startTime.endIndex, offsetBy: -5)
+        let aferStartTime = startTime.substring(from: startIndex)
+        
+        let endTime = gameEndTimeTextField.text!
+        let endIndex = endTime.index(endTime.endIndex, offsetBy: -5)
+        let aferEndIndex = endTime.substring(from: endIndex)
+        
+        
+        let gameDetail = [gameNameTextFiled.text!, gameDateTextField.text!, aferStartTime, aferEndIndex, gamePlaceTextField.text!, gameType, myName, pairName, rivalAName, rivalBName, mySetCount1TextField.text!, rivalSetCount1TextField.text!, mySetCount2TextField.text!, rivalSetCount2TextField.text!, mySetCount3TextField.text!, rivalSetCount3TextField.text!, remarkTextView.text!]
 
         let newGame = GameData(gameList: gameDetail as! [String])
         

@@ -3,8 +3,7 @@
 import UIKit
 
 
+var str: String = "終了       22:00"
+let index = str.index(str.endIndex, offsetBy: -5)
 
-
-let str = "こんにちはSwift"
-var currentIndex = str.index(str.endIndex, offsetBy: -5)
-var subStr = str.substring(to:currentIndex) // "こんにちは"
+let moji = str.substring(from: index)

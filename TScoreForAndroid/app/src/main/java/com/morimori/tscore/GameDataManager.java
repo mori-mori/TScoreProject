@@ -1,6 +1,5 @@
 package com.morimori.tscore;
 
-import android.app.Activity;
 import android.content.Context;
 
 import java.io.File;
@@ -23,86 +22,99 @@ public class GameDataManager
 
 	FileInputStream fileInputStream;
 
-	Context actyveContext;
+	Context activityContext;
 
-	private String textFileName = "gameList.csv";
+	private final String textFileName = "gameList.csv";
 
-	public String LoadGameList(Context context)
+	public void LoadGameList(Context context)
 	{
-
-
-		FileInputStream fileInputStream;
-		String text = null;
-
-		actyveContext = context;
-
 		File file = context.getFileStreamPath(textFileName);
-		boolean isExists = file.exists();
 
-
-		if (!isExists)
+		if (!file.exists())
 		{
-			return text;
+			return;
 		}
 
+		activityContext = context;
+		FileInputStream fileInputStream;
+		gameArrayList.clear();
 
-
-
-		try {
-			fileInputStream = actyveContext.openFileInput(textFileName);
+		try
+		{
+			fileInputStream = activityContext.openFileInput(textFileName);
 			String lineBuffer = null;
 
 			BufferedReader reader= new BufferedReader(new InputStreamReader(fileInputStream,"UTF-8"));
-			while( (lineBuffer = reader.readLine()) != null ) {
-				text = lineBuffer ;
+			while( (lineBuffer = reader.readLine()) != null )
+			{
+				String[] gameData = lineBuffer.split(",", 0);
+
+				GameDate gameDetail = new GameDate(gameData);
+
+				gameArrayList.add(gameDetail);
 			}
-		} catch (IOException e) {
+		}
+		catch (IOException e)
+		{
 			e.printStackTrace();
 		}
-
-		return text;
-
-		//gameArrayList.clear();
-
-
 	}
 
-	public void UpdateCSVFile(String str)
+	public void UpdateCSVFile(Context context)
 	{
-//		 String line = new String();
-//
-//		for (GameDate item : GameDataManager.sharedInstance.gameArrayList)
-//		{
-//			line = line + item.gameName.toString();
-//
-//		}
-//
-//		String text = null;
-//
-//		try {
-//			//fileInputStream = openFileInput(file);
-//			String lineBuffer = null;
-//
-//			BufferedReader reader= new BufferedReader(new InputStreamReader(fileInputStream,"UTF-8"));
-//			while( (lineBuffer = reader.readLine()) != null ) {
-//				text = lineBuffer ;
-//			}
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		activityContext = context;
 
+		StringBuffer sb = new StringBuffer();
+
+		for (GameDate item : gameArrayList)
+		{
+			sb.append(item.gameName.toString());
+			sb.append(",");
+			sb.append(item.gameDate.toString());
+			sb.append(",");
+			sb.append(item.gameStartTime.toString());
+			sb.append(",");
+			sb.append(item.gameEndTime.toString());
+			sb.append(",");
+			sb.append(item.gamePlace.toString());
+			sb.append(",");
+			sb.append(item.gameType);
+			sb.append(",");
+			sb.append(item.myName.toString());
+			sb.append(",");
+			sb.append(item.pairName.toString());
+			sb.append(",");
+			sb.append(item.rivalAName.toString());
+			sb.append(",");
+			sb.append(item.rivalBName.toString());
+			sb.append(",");
+			sb.append(item.mySetCount1.toString());
+			sb.append(",");
+			sb.append(item.rivalSetCount1.toString());
+			sb.append(",");
+			sb.append(item.mySetCount2.toString());
+			sb.append(",");
+			sb.append(item.rivalSetCount2.toString());
+			sb.append(",");
+			sb.append(item.mySetCount3.toString());
+			sb.append(",");
+			sb.append(item.rivalSetCount3.toString());
+			sb.append(",");
+			sb.append(item.remark);
+			sb.append("\n");
+		}
 
 		FileOutputStream fileOutputstream = null;
 
-		try {
-			fileOutputstream =  actyveContext.openFileOutput(textFileName, Context.MODE_PRIVATE);
-			fileOutputstream.write(str.getBytes());
-		} catch (IOException e) {
+		try
+		{
+			fileOutputstream =  activityContext.openFileOutput(textFileName, Context.MODE_PRIVATE);
+			fileOutputstream.write(sb.toString().getBytes());
+		}
+		catch (IOException e)
+		{
 			e.printStackTrace();
 		}
-
-
-
 	}
 }
 

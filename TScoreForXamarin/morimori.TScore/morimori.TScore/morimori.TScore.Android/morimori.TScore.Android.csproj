@@ -100,6 +100,12 @@
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\monoandroid\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\monoandroid\PCLStorage.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -127,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\morimori.TScore\morimori.TScore.csproj">
-      <Project>{82017b51-badb-4380-aa48-79164d155048}</Project>
+      <Project>{D0A371A5-610E-463A-8D59-4B250260277B}</Project>
       <Name>morimori.TScore</Name>
     </ProjectReference>
   </ItemGroup>

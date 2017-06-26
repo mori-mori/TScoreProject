@@ -28,6 +28,12 @@ namespace morimori.TScore
 
             gameListView.ItemsSource = games;
 
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "新規追加",
+                Command = new Command(() => DisplayAlert("Selected", "menu1", "OK"))
+            });
+
         }
     }
 

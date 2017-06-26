@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "morimori.TScore.Android.dll" comes first in this list. */
 		"morimori.TScore.Android.dll",
 		"FormsViewGroup.dll",
+		"PCLStorage.Abstractions.dll",
+		"PCLStorage.dll",
 		"SegmentedControl.FormsPlugin.Abstractions.dll",
 		"SegmentedControl.FormsPlugin.Android.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",

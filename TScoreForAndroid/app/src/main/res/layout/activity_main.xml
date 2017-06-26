@@ -7,38 +7,29 @@
     android:layout_height="match_parent"
     tools:context="com.morimori.tscore.MainActivity">
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
+    <!-- ここにToolBarを定義 -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
-        android:text="save"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testText"
-        />
-
-    <EditText
-        android:id="@+id/testText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="395dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        tools:layout_editor_absoluteY="0dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+    </android.support.v7.widget.Toolbar>
 
     <Button
-        android:id="@+id/loadButton"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="100dp"
-        android:text="load"
+        android:text="Button"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testText"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -11,7 +11,7 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            ToolbarItems.Add(new ToolbarItem { Text = "保存" });
+            ToolbarItems.Add(new ToolbarItem { Text = "保存", Command = new Command(() => Navigation.PopAsync(true)) });
 
             SegControl.ValueChanged += SegControl_ValueChanged;
         }

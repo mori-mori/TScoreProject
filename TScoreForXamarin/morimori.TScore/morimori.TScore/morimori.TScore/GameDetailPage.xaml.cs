@@ -11,11 +11,9 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
+            ToolbarItems.Add(new ToolbarItem { Text = "保存" });
 
-            var st = new StackLayout() { };
-            var lb = new Label() { Text = "morimori" };
 
-            Content = new StackLayout { Children = { lb } };
         }
     }
 }

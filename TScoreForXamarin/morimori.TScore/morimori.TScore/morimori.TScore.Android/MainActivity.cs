@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using SegmentedControl.FormsPlugin.Android;
 
+
 namespace morimori.TScore.Droid
 {
     [Activity(Label = "morimori.TScore", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{CA051754-5BA0-497D-ABEE-8F293951D34C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore/GameDetailPage.xaml">
     <Files>
-      <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs" Line="21" Column="2" />
+      <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs" Line="11" Column="10" />
+      <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml" Line="16" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.morimori.TScore.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_25_x86" />

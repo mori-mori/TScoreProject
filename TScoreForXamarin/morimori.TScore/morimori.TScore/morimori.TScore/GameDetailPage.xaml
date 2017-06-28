@@ -3,70 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:controls="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
              x:Class="morimori.TScore.GameDetailPage">
-	<ContentPage.Content>
+    <ContentPage.Content>
         <ScrollView>
-        
-        <StackLayout Orientation="Vertical" Margin="20, 20, 20, 0">
-            <Entry Placeholder="試合名"/>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 20, 0, 20">
-                <DatePicker HorizontalOptions="FillAndExpand" />
-                <TimePicker x:Name="startTime" HorizontalOptions="FillAndExpand" />
-                <TimePicker x:Name="endTime" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <Entry Placeholder="試合会場" />
-            <StackLayout Margin="20, 20, 20, 20">
+            <StackLayout Orientation="Vertical" Margin="20, 20, 20, 0">
+                <Entry Placeholder="試合名"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 20, 0, 20">
+                    <DatePicker HorizontalOptions="FillAndExpand" />
+                    <TimePicker x:Name="startTime" HorizontalOptions="FillAndExpand" />
+                    <TimePicker x:Name="endTime" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <Entry Placeholder="試合会場" />
+                <StackLayout Margin="20, 20, 20, 20">
+                    <StackLayout>
+                        <controls:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
+                            <controls:SegmentedControl.Children>
+                                <controls:SegmentedControlOption Text="シングルス" />
+                                <controls:SegmentedControlOption Text="ダブルス" />
+                            </controls:SegmentedControl.Children>
+                        </controls:SegmentedControl>
+                    </StackLayout>
+                </StackLayout>
                 <StackLayout>
-                    <controls:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
-                        <controls:SegmentedControl.Children>
-                            <controls:SegmentedControlOption Text="シングルス" />
-                            <controls:SegmentedControlOption Text="ダブルス" />
-                        </controls:SegmentedControl.Children>
-                    </controls:SegmentedControl>
-                </StackLayout>
-            </StackLayout>
-            <StackLayout>
-                <StackLayout Orientation="Vertical" IsVisible="False">
-                    <Entry Placeholder="自分の名前" />
-                    <Label Text="VS" HorizontalTextAlignment="Center" />
-                    <Entry Placeholder="ライバルの名前" />
-                </StackLayout>
-                <StackLayout Orientation="Vertical" IsVisible="True">
-                    <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="自分の名前" HorizontalOptions="FillAndExpand"/>
-                        <Entry Placeholder="ペアの名前" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout x:Name="singleArea" Orientation="Vertical" IsVisible="False">
+                        <Entry Placeholder="自分の名前" />
+                        <Label Text="VS" HorizontalTextAlignment="Center" />
+                        <Entry Placeholder="ライバルの名前" />
                     </StackLayout>
-                    <Label Text="VS" HorizontalTextAlignment="Center" />
-                    <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
-                        <Entry Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout x:Name="doublesArea" Orientation="Vertical" IsVisible="True">
+                        <StackLayout Orientation="Horizontal">
+                            <Entry Placeholder="自分の名前" HorizontalOptions="FillAndExpand"/>
+                            <Entry Placeholder="ペアの名前" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <Label Text="VS" HorizontalTextAlignment="Center" />
+                        <StackLayout Orientation="Horizontal">
+                            <Entry Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
+                            <Entry Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="0, 20, 0, 20">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                        <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                        <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                        <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                        <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                        <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout Margin="0, 20, 0, 20">
+                        <Editor HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HeightRequest="200" />
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Vertical" Margin="0, 20, 0, 20">
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="set1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                    <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="set2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                    <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="set3" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                    <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                    <Entry Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                </StackLayout>
-                <StackLayout Margin="0, 20, 0, 20">
-                    <Editor HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HeightRequest="200" />
-                </StackLayout>
-            </StackLayout>
-        </StackLayout>
-
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -13,7 +13,24 @@ namespace morimori.TScore
 
             ToolbarItems.Add(new ToolbarItem { Text = "保存" });
 
+            SegControl.ValueChanged += SegControl_ValueChanged;
+        }
 
+
+
+        void SegControl_ValueChanged(object sender, EventArgs e)
+        {
+            switch (SegControl.SelectedSegment)
+            {
+                case 0:
+                    singleArea.IsVisible = true;
+                    doublesArea.IsVisible = false;
+                    break;
+                case 1:
+                    singleArea.IsVisible = false;
+                    doublesArea.IsVisible = true;
+                    break;
+            }
         }
     }
 }

@@ -31,9 +31,8 @@ namespace morimori.TScore
             ToolbarItems.Add(new ToolbarItem
             {
                 Text = "新規追加",
-                Command = new Command(() => DisplayAlert("Selected", "menu1", "OK"))
+                Command = new Command(() => Navigation.PushAsync(new GameDetailPage(), true))
             });
-
         }
     }
 

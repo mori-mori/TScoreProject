@@ -13,7 +13,7 @@ namespace morimori.TScore
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameListPage : ContentPage
     {
-        private ObservableCollection<Game> games = new ObservableCollection<Game>();
+        private ObservableCollection<GameData> games = new ObservableCollection<GameData>();
 
         public GameListPage()
         {
@@ -21,11 +21,15 @@ namespace morimori.TScore
 
             Title = "トーナメント一覧";
 
-            for (int i = 0; i < 20; i++)
-            {
-                games.Add(new Game("morimori"));
-            }
+            GameDataManager.sharedInstance.LoadGameList();
 
+            games = GameDataManager.sharedInstance.list;
+
+            //Game g = new Game("morimori");
+            //games.Add(g);
+
+            //gameListView.ItemsSource = games;
+            
             gameListView.ItemsSource = games;
 
             ToolbarItems.Add(new ToolbarItem

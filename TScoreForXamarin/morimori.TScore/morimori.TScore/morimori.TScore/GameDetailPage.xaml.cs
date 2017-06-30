@@ -133,7 +133,14 @@ namespace morimori.TScore
         {
             if (gameData == null)
             {
+                gameDate.Date = DateTime.Now;
+                startTime.Time = TimeSpan.Parse(DateTime.Now.ToString("HH:mm"));
 
+                var afterHourTime = DateTime.Now;
+                var hourTime = new TimeSpan(0, 1, 0, 0);
+
+                DateTime dt = afterHourTime + hourTime;
+                endTime.Time = TimeSpan.Parse(dt.ToString("HH:mm"));
             }
             else
             {
@@ -143,8 +150,9 @@ namespace morimori.TScore
                 endTime.Time = TimeSpan.Parse(gameData.EndTime);
                 gamePlace.Text = gameData.Place;
 
-                if (SegControl.SelectedSegment == 0)
+                if (int.Parse(gameData.Type) == 0)
                 {
+                    SegControl.SelectedSegment = 0;
                     singleArea.IsVisible = true;
                     doublesArea.IsVisible = false;
                     myNameSingle.Text = gameData.MyName;
@@ -152,6 +160,7 @@ namespace morimori.TScore
                 }
                 else
                 {
+                    SegControl.SelectedSegment = 1;
                     singleArea.IsVisible = false;
                     doublesArea.IsVisible = true;
                     myNameDoubles.Text = gameData.MyName;

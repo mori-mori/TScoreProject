@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{CA051754-5BA0-497D-ABEE-8F293951D34C}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs">
     <Files>
       <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs" Line="11" Column="10" />
       <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml" Line="83" Column="1" />

@@ -17,11 +17,22 @@ namespace morimori.TScore
             ToolbarItems.Add(new ToolbarItem { Text = "保存", Command = new Command(SaveGameData) });
             
             SegControl.ValueChanged += SegControl_ValueChanged;
+
+            DisplayGameData();
         }
 
-       public void SetGame(GameData gm)
+
+        public GameDetailPage(GameData game)
         {
-            gameData = gm;
+            gameData = game;
+
+            InitializeComponent();
+
+            ToolbarItems.Add(new ToolbarItem { Text = "保存", Command = new Command(SaveGameData) });
+
+            SegControl.ValueChanged += SegControl_ValueChanged;
+
+            DisplayGameData();
         }
 
 
@@ -49,7 +60,7 @@ namespace morimori.TScore
 
             if (gameData != null)
             {
-                GameDataManager.sharedInstance.list.RemoveAt(0);
+                GameDataManager.sharedInstance.list.Remove(gameData);
             }
 
             GameDataManager.sharedInstance.list.Insert(0, newGame);
@@ -118,6 +129,50 @@ namespace morimori.TScore
             return gameData;
         }
 
+        private void DisplayGameData()
+        {
+            if (gameData == null)
+            {
 
+            }
+            else
+            {
+                gameName.Text = gameData.Name;
+                gameDate.Date = DateTime.Parse(gameData.Date);
+                startTime.Time = TimeSpan.Parse(gameData.StartTime);
+                endTime.Time = TimeSpan.Parse(gameData.EndTime);
+                gamePlace.Text = gameData.Place;
+
+                if (SegControl.SelectedSegment == 0)
+                {
+                    singleArea.IsVisible = true;
+                    doublesArea.IsVisible = false;
+                    myNameSingle.Text = gameData.MyName;
+                    rivalNameSingle.Text = gameData.RivalAName;
+                }
+                else
+                {
+                    singleArea.IsVisible = false;
+                    doublesArea.IsVisible = true;
+                    myNameDoubles.Text = gameData.MyName;
+                    pairNameDoubles.Text = gameData.PairName;
+                    rivalANameDoubles.Text = gameData.RivalAName;
+                    rivalBNameDoubles.Text = gameData.RivalBName;
+                }
+
+                mySetCount1.Text = gameData.MySetCount1;
+                rivalSetCount1.Text = gameData.RivalSetCount1;
+                mySetCount2.Text = gameData.MySetCount2;
+                rivalSetCount2.Text = gameData.RivalSetCount2;
+                mySetCount3.Text = gameData.MySetCount3;
+                rivalSetCount3.Text = gameData.RivalSetCount3;
+                mySetCount4.Text = gameData.MySetCount4;
+                rivalSetCount4.Text = gameData.RivalSetCount4;
+                mySetCount5.Text = gameData.MySetCount5;
+                rivalSetCount5.Text = gameData.RivalSetCount5;
+
+                remarkEditor.Text = gameData.Remark;
+            }
+        }
     }
 }

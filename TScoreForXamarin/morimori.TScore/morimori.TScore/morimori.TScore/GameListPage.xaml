@@ -4,7 +4,7 @@
              x:Class="morimori.TScore.GameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="gameListView" ItemsSource="{Binding games}">
+            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding games}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

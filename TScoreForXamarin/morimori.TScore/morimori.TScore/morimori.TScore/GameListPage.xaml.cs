@@ -38,17 +38,24 @@ namespace morimori.TScore
                 Command = new Command(() => Navigation.PushAsync(new GameDetailPage(), true))
             });
         }
-    }
 
-
-    public class Game
-    {
-        public string Name { get; set; }
-
-        public Game(string name)
+        private void gameListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Name = name;
+            ListView ls = (ListView)sender;
+            GameData gd = ls.SelectedItem as GameData;
+            Navigation.PushAsync(new GameDetailPage(gd), true);
         }
     }
+
+
+    //public class Game
+    //{
+    //    public string Name { get; set; }
+
+    //    public Game(string name)
+    //    {
+    //        Name = name;
+    //    }
+    //}
 
 }

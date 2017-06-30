@@ -103,11 +103,15 @@ namespace morimori.TScore
             string rivalSet4 = rivalSetCount4.Text;
             string rivalSet5 = rivalSetCount5.Text;
 
+            string test1 = gameDate.Date.ToString("yyyy/MM/dd");
+            string start = $"{startTime.Time.Hours}:{startTime.Time.Minutes}";
+            string end = $"{endTime.Time.Hours}:{endTime.Time.Minutes}";
+
             string gameData = 
                 $"{gameName.Text}," +
-                $"{gameDate.Date}," +
-                $"{startTime.Time}," +
-                $"{endTime.Time}," +
+                $"{gameDate.Date.ToString("yyyy/MM/dd")}," +
+                $"{start}," +
+                $"{end}," +
                 $"{gamePlace.Text}," +
                 $"{SegControl.SelectedSegment.ToString()}," +
                 $"{myName}," +

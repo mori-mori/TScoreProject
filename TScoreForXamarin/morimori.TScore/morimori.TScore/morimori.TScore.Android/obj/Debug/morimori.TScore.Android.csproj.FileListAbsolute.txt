@@ -96,11 +96,3 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\res\values\styles.xml
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\R.cs.flag
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\uploadflags.txt
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\morimori.TScore.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\morimori.TScore.Android.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\morimori.TScore.Android.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\morimori.TScore.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb

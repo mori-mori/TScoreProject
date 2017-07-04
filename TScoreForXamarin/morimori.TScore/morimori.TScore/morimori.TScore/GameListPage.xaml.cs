@@ -22,22 +22,23 @@ namespace morimori.TScore
             Title = "トーナメント一覧";
 
             GameDataManager.sharedInstance.LoadGameList();
-
+            
             games = GameDataManager.sharedInstance.list;
-
+            
             //Game g = new Game("morimori");
             //games.Add(g);
 
             //gameListView.ItemsSource = games;
-            
-            gameListView.ItemsSource = games;
 
+            gameListView.ItemsSource = games;
+            
             ToolbarItems.Add(new ToolbarItem
             {
                 Text = "新規追加",
                 Command = new Command(() => Navigation.PushAsync(new GameDetailPage(), true))
             });
         }
+
 
         private void gameListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {

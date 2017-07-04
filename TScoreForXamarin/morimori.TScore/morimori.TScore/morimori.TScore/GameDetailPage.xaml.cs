@@ -56,6 +56,32 @@ namespace morimori.TScore
 
         private void SaveGameData()
         {
+            if (string.IsNullOrWhiteSpace(gameName.Text))
+            {
+                DisplayAlert("未入力", "試合名を入力して下さい。", "OK");
+                return;
+            }
+
+            if (SegControl.SelectedSegment == 0)
+            {
+                if (string.IsNullOrWhiteSpace(myNameSingle.Text) || string.IsNullOrWhiteSpace(rivalNameSingle.Text))
+                {
+                    DisplayAlert("未入力", "選手名を入力して下さい。", "OK");
+                    return;
+                }
+            }
+            else 
+            {
+                if (string.IsNullOrWhiteSpace(myNameDoubles.Text) || 
+                    string.IsNullOrWhiteSpace(pairNameDoubles.Text) || 
+                    string.IsNullOrWhiteSpace(rivalANameDoubles.Text) || 
+                    string.IsNullOrWhiteSpace(rivalBNameDoubles.Text))
+                {
+                    DisplayAlert("未入力", "選手名を入力して下さい。", "OK");
+                    return;
+                }
+            }
+
             var newGame = new GameData(GetDisplayedGameData().Split(','));
 
             if (gameData != null)
@@ -186,6 +212,15 @@ namespace morimori.TScore
 
                 remarkEditor.Text = gameData.Remark;
             }
+        }
+
+        private void deleteButton_Clicked(object sender, EventArgs e)
+        {
+            GameDataManager.sharedInstance.list.Remove(gameData);
+
+            GameDataManager.sharedInstance.UpdateCSVFile();
+
+            Navigation.PopAsync(true);
         }
     }
 }

@@ -93,6 +93,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="RemarkBorderLineEffect.cs" />
     <Compile Include="SegViewRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />

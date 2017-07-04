@@ -49,6 +49,7 @@
     <Compile Include="GameDetailPage.xaml.cs">
       <DependentUpon>GameDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RemarkBorderLineEffect.cs" />
     <Compile Include="SegmentTest.xaml.cs">
       <DependentUpon>SegmentTest.xaml</DependentUpon>
     </Compile>

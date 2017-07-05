@@ -24,11 +24,6 @@ namespace morimori.TScore
             GameDataManager.sharedInstance.LoadGameList();
             
             games = GameDataManager.sharedInstance.list;
-            
-            //Game g = new Game("morimori");
-            //games.Add(g);
-
-            //gameListView.ItemsSource = games;
 
             gameListView.ItemsSource = games;
             
@@ -47,16 +42,4 @@ namespace morimori.TScore
             Navigation.PushAsync(new GameDetailPage(gd), true);
         }
     }
-
-
-    //public class Game
-    //{
-    //    public string Name { get; set; }
-
-    //    public Game(string name)
-    //    {
-    //        Name = name;
-    //    }
-    //}
-
 }

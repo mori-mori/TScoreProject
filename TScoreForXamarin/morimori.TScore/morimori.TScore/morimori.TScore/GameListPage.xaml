@@ -20,7 +20,7 @@
                                             </StackLayout>
                                         </StackLayout>
                                     </StackLayout>
-                                    <Label Text="{Binding Date}" HorizontalOptions="End"/>
+                                    <Label Text="{Binding Date}" HorizontalOptions="End" VerticalOptions="End"/>
 
                                     <!--<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                                         <StackLayout Orientation="Horizontal">

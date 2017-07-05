@@ -1,16 +1,33 @@
-﻿<Properties StartupConfiguration="{CA051754-5BA0-497D-ABEE-8F293951D34C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs">
+﻿<Properties StartupConfiguration="{E5AE2EA6-3A1C-4743-9D62-531E92980C80}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml.cs" Line="11" Column="10" />
-      <File FileName="morimori.TScore/morimori.TScore/GameDetailPage.xaml" Line="83" Column="1" />
+      <File FileName="morimori.TScore/morimori.TScore.iOS/Info.plist" />
+      <File FileName="morimori.TScore/morimori.TScore.iOS/Entitlements.plist" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="morimori.TScore" expanded="True">
+            <Node name="morimori.TScore" expanded="True">
+              <Node name="GameDetailPage.xaml" expanded="True" />
+            </Node>
+            <Node name="morimori.TScore.iOS" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="メディア.xcassets" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.morimori.TScore.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_25_x86" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.morimori.TScore.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.35C0DBC8-EAC9-4E95-9BD2-FD6007F223AC" />
+  <MonoDevelop.Ide.ItemProperties.morimori.TScore.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.93DF6499-000F-435E-A4FE-A1C1E412345D" />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -82,6 +82,12 @@ namespace morimori.TScore
                 }
             }
 
+            if (!CanSaveGame())
+            {
+                DisplayAlert("未入力", "ゲームカウントを入力して下さい。", "OK");
+                return;
+            }
+
             var newGame = new GameData(GetDisplayedGameData().Split(','));
 
             if (gameData != null)
@@ -95,6 +101,48 @@ namespace morimori.TScore
 
              Navigation.PopAsync(true);
         }
+
+
+        private bool CanSaveGame()
+        {
+            int mySet1;
+            int rivalSet1;
+            if (!(int.TryParse(mySetCount1.Text, out mySet1) && int.TryParse(rivalSetCount1.Text, out rivalSet1)))
+            {
+                return false;
+            }
+
+            int mySet2;
+            int rivalSet2;
+            if (!(int.TryParse(mySetCount2.Text, out mySet2) && int.TryParse(rivalSetCount2.Text, out rivalSet2)))
+            {
+                return false;
+            }
+
+            int mySet3;
+            int rivalSet3;
+            if (!(int.TryParse(mySetCount3.Text, out mySet3) && int.TryParse(rivalSetCount3.Text, out rivalSet3)))
+            {
+                return false;
+            }
+
+            int mySet4;
+            int rivalSet4;
+            if (!(int.TryParse(mySetCount4.Text, out mySet4) && int.TryParse(rivalSetCount4.Text, out rivalSet4)))
+            {
+                return false;
+            }
+
+            int mySet5;
+            int rivalSet5;
+            if (!(int.TryParse(mySetCount5.Text, out mySet5) && int.TryParse(rivalSetCount5.Text, out rivalSet5)))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
 
         private string GetDisplayedGameData()
         {
@@ -214,13 +262,16 @@ namespace morimori.TScore
             }
         }
 
-        private void deleteButton_Clicked(object sender, EventArgs e)
+        private async void deleteButton_Clicked(object sender, EventArgs e)
         {
+            var result = await DisplayAlert("注意", "削除しても宜しいですか？", "OK", "キャンセル");
+            if (!result) return;
+
             GameDataManager.sharedInstance.list.Remove(gameData);
 
             GameDataManager.sharedInstance.UpdateCSVFile();
 
-            Navigation.PopAsync(true);
+           await Navigation.PopAsync(true);
         }
     }
 }

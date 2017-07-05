@@ -101,6 +101,7 @@
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SegmentedControl.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -139,54 +140,34 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-29.png">
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-29@3x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Artboard-1136@4x.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-40@2x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Artboard-960@2x.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-40@3x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-60@2x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Artboard-60@3x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcons.appiconset\Contents.json">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\LaunchImages.launchimage\Artboard-1136@4x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\LaunchImages.launchimage\Artboard-960.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\AppIcon.appiconset\Contents.json">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\LaunchImages.launchimage\Artboard-960@2x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\LaunchImages.launchimage\Contents.json">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\StartImages.launchimage\Artboard-1136@4x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\StartImages.launchimage\Artboard-960@2x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\メディア.xcassets\StartImages.launchimage\Contents.json">
-      <InProject>false</InProject>
-    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-29.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-29%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-29%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-40%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-40%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-57.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-57%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-60%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Artboard-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\Artboard-960%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <BundleResource Include="Resources\Artboard-1136%404x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -1,26 +1,8 @@
 ﻿<Properties StartupConfiguration="{E5AE2EA6-3A1C-4743-9D62-531E92980C80}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore.iOS/Info.plist">
     <Files>
       <File FileName="morimori.TScore/morimori.TScore.iOS/Info.plist" />
-      <File FileName="morimori.TScore/morimori.TScore.iOS/Entitlements.plist" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="morimori.TScore" expanded="True">
-            <Node name="morimori.TScore" expanded="True">
-              <Node name="GameDetailPage.xaml" expanded="True" />
-            </Node>
-            <Node name="morimori.TScore.iOS" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="メディア.xcassets" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.morimori.TScore.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_25_x86" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

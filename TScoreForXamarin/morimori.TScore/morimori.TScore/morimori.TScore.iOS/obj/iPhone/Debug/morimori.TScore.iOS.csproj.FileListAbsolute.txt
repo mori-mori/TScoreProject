@@ -61,3 +61,8 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.exe
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.pdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\optimized\Artboard-960@2x.png
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\optimized\Artboard-1136@4x.png
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll

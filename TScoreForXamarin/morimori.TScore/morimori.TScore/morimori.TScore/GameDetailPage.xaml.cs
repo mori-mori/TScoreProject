@@ -8,7 +8,7 @@ namespace morimori.TScore
 {
     public partial class GameDetailPage : ContentPage
     {
-        private GameData gameData;
+        private Game gameData;
 
         public GameDetailPage()
         {
@@ -22,7 +22,7 @@ namespace morimori.TScore
         }
 
 
-        public GameDetailPage(GameData game)
+        public GameDetailPage(Game game)
         {
             gameData = game;
 
@@ -88,7 +88,7 @@ namespace morimori.TScore
                 return;
             }
 
-            var newGame = new GameData(GetDisplayedGameData().Split(','));
+            var newGame = GetDisplayedGameData();
 
             if (gameData != null)
             {
@@ -97,7 +97,7 @@ namespace morimori.TScore
 
             GameDataManager.sharedInstance.list.Insert(0, newGame);
 
-            GameDataManager.sharedInstance.UpdateCSVFile();
+            GameDataManager.sharedInstance.UpdateCSVFile(newGame);
 
              Navigation.PopAsync(true);
         }
@@ -144,7 +144,7 @@ namespace morimori.TScore
         }
 
 
-        private string GetDisplayedGameData()
+        private Game GetDisplayedGameData()
         {
             string myName;
             string pairName;
@@ -181,30 +181,53 @@ namespace morimori.TScore
             string start = $"{startTime.Time.Hours}:{startTime.Time.Minutes}";
             string end = $"{endTime.Time.Hours}:{endTime.Time.Minutes}";
 
-            string gameData = 
-                $"{gameName.Text}," +
-                $"{gameDate.Date.ToString("yyyy/MM/dd")}," +
-                $"{start}," +
-                $"{end}," +
-                $"{gamePlace.Text}," +
-                $"{SegControl.SelectedSegment.ToString()}," +
-                $"{myName}," +
-                $"{pairName}," +
-                $"{rivalAName}," +
-                $"{rivalBName}," +
-                $"{mySet1}," +
-                $"{rivalSet1}," +
-                $"{mySet2}," +
-                $"{rivalSet2}," +
-                $"{mySet3}," +
-                $"{rivalSet3}," +
-                $"{mySet4}," +
-                $"{rivalSet4}," +
-                $"{mySet5}," +
-                $"{rivalSet5}," +
-                $"{remarkEditor.Text}";
+            //string gameData = 
+            //    $"{gameName.Text}," +
+            //    $"{gameDate.Date.ToString("yyyy/MM/dd")}," +
+            //    $"{start}," +
+            //    $"{end}," +
+            //    $"{gamePlace.Text}," +
+            //    $"{SegControl.SelectedSegment.ToString()}," +
+            //    $"{myName}," +
+            //    $"{pairName}," +
+            //    $"{rivalAName}," +
+            //    $"{rivalBName}," +
+            //    $"{mySet1}," +
+            //    $"{rivalSet1}," +
+            //    $"{mySet2}," +
+            //    $"{rivalSet2}," +
+            //    $"{mySet3}," +
+            //    $"{rivalSet3}," +
+            //    $"{mySet4}," +
+            //    $"{rivalSet4}," +
+            //    $"{mySet5}," +
+            //    $"{rivalSet5}," +
+            //    $"{remarkEditor.Text}";
 
-            return gameData;
+            var gm = new Game();
+            gm.Name = gameName.Text;
+            gm.Date = gameDate.Date.ToString("yyyy/MM/dd");
+            gm.StartTime = start;
+            gm.EndTime = end;
+            gm.Place = gamePlace.Text;
+            gm.Type = SegControl.SelectedSegment;
+            gm.MyName = myName;
+            gm.PairName = pairName;
+            gm.RivalAName = rivalAName;
+            gm.RivalBName = rivalBName;
+            gm.MySet1Count = int.Parse(mySet1);
+            gm.RivalSet1Count = int.Parse(rivalSet1);
+            gm.MySet2Count = int.Parse(mySet2);
+            gm.RivalSet2Count = int.Parse(rivalSet2);
+            gm.MySet3Count = int.Parse(mySet3);
+            gm.RivalSet3Count = int.Parse(rivalSet3);
+            gm.MySet4Count = int.Parse(mySet4);
+            gm.RivalSet4Count = int.Parse(rivalSet4);
+            gm.MySet5Count = int.Parse(mySet5);
+            gm.RivalSet5Count = int.Parse(rivalSet5);
+            gm.Remark = remarkEditor.Text;
+
+            return gm;
         }
 
         private void DisplayGameData()
@@ -228,7 +251,7 @@ namespace morimori.TScore
                 endTime.Time = TimeSpan.Parse(gameData.EndTime);
                 gamePlace.Text = gameData.Place;
 
-                if (int.Parse(gameData.Type) == 0)
+                if (gameData.Type == 0)
                 {
                     SegControl.SelectedSegment = 0;
                     singleArea.IsVisible = true;
@@ -247,16 +270,16 @@ namespace morimori.TScore
                     rivalBNameDoubles.Text = gameData.RivalBName;
                 }
 
-                mySetCount1.Text = gameData.MySetCount1;
-                rivalSetCount1.Text = gameData.RivalSetCount1;
-                mySetCount2.Text = gameData.MySetCount2;
-                rivalSetCount2.Text = gameData.RivalSetCount2;
-                mySetCount3.Text = gameData.MySetCount3;
-                rivalSetCount3.Text = gameData.RivalSetCount3;
-                mySetCount4.Text = gameData.MySetCount4;
-                rivalSetCount4.Text = gameData.RivalSetCount4;
-                mySetCount5.Text = gameData.MySetCount5;
-                rivalSetCount5.Text = gameData.RivalSetCount5;
+                mySetCount1.Text = gameData.MySet1Count.ToString();
+                rivalSetCount1.Text = gameData.RivalSet1Count.ToString();
+                mySetCount2.Text = gameData.MySet2Count.ToString();
+                rivalSetCount2.Text = gameData.RivalSet2Count.ToString();
+                mySetCount3.Text = gameData.MySet3Count.ToString();
+                rivalSetCount3.Text = gameData.RivalSet3Count.ToString();
+                mySetCount4.Text = gameData.MySet4Count.ToString();
+                rivalSetCount4.Text = gameData.RivalSet4Count.ToString();
+                mySetCount5.Text = gameData.MySet5Count.ToString();
+                rivalSetCount5.Text = gameData.RivalSet5Count.ToString();
 
                 remarkEditor.Text = gameData.Remark;
             }
@@ -269,7 +292,8 @@ namespace morimori.TScore
 
             GameDataManager.sharedInstance.list.Remove(gameData);
 
-            GameDataManager.sharedInstance.UpdateCSVFile();
+            gameData.Delete = true;
+            GameDataManager.sharedInstance.UpdateCSVFile(gameData);
 
            await Navigation.PopAsync(true);
         }

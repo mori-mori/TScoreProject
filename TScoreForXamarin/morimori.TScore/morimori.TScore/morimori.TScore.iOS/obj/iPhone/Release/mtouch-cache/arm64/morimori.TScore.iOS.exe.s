@@ -1683,7 +1683,7 @@ _mono_aot_file_info:
 	.long 48,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 116,208,119,48,109,249,27,246,29,178,230,185,154,44,104,143
+	.byte 214,227,210,97,222,172,105,232,172,249,118,239,110,107,32,248
 	.globl _mono_aot_module_morimori_TScore_iOS_info
 	.align 3
 _mono_aot_module_morimori_TScore_iOS_info:

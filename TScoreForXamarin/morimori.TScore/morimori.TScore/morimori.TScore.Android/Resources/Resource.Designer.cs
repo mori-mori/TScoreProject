@@ -1822,6 +1822,8 @@ namespace morimori.TScore.Droid
 			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_id = global::morimori.TScore.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::morimori.TScore.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::SegmentedControl.FormsPlugin.Android.Resource.Styleable.ViewStubCompat_android_layout = global::morimori.TScore.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::morimori.TScore.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::morimori.TScore.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::morimori.TScore.Droid.Resource.Attribute.actionBarSize;
 		}
 		

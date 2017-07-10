@@ -1,0 +1,11 @@
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\morimori.TScore.UWP.csprojResolveAssemblyReference.cache
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\App.g.i.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\App.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\MainPage.g.i.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\MainPage.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\XamlTypeInfo.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\App.xaml
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\MainPage.xaml
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\App.xbf
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\MainPage.xbf
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.UWP\obj\x86\Release\XamlSaveStateFile.xml

@@ -65,73 +65,82 @@ namespace morimori.TScore
     {
         public static readonly GameDataManager sharedInstance = new GameDataManager();
 
-        public ObservableCollection<GameData> list = new ObservableCollection<GameData>();
+        public ObservableCollection<Game> list = new ObservableCollection<Game>();
+
+        readonly GameRepository _db = new GameRepository();
 
         private readonly string textFileName = "gameList.csv";
 
         static GameDataManager() { }
 
-        public async void LoadGameList()
+        public void LoadGameList()
         {
             list.Clear();
 
-            IFolder rootFolder = FileSystem.Current.LocalStorage;
+            //IFolder rootFolder = FileSystem.Current.LocalStorage;
 
-            ExistenceCheckResult res = await rootFolder.CheckExistsAsync(textFileName);
+            //ExistenceCheckResult res = await rootFolder.CheckExistsAsync(textFileName);
 
-            if (res == ExistenceCheckResult.NotFound)
+            //if (res == ExistenceCheckResult.NotFound)
+            //{
+            //    return;
+            //}
+
+            //IFile file = await rootFolder.GetFileAsync(textFileName);
+            //string allGameData = await file.ReadAllTextAsync();
+
+            //foreach(string line in allGameData.Split(new string[] { "\n" }, StringSplitOptions.None))
+            //{
+            //    if (line.Length == 0) return;
+
+            //    string[] gameData = line.Split(',');
+
+            //    GameData gd = new GameData(gameData);
+
+            //    list.Add(gd);
+            //}
+
+            foreach (var item in _db.GetItems())
             {
-                return;
-            }
-
-            IFile file = await rootFolder.GetFileAsync(textFileName);
-            string allGameData = await file.ReadAllTextAsync();
-
-            foreach(string line in allGameData.Split(new string[] { "\n" }, StringSplitOptions.None))
-            {
-                if (line.Length == 0) return;
-
-                string[] gameData = line.Split(',');
-
-                GameData gd = new GameData(gameData);
-
-                list.Add(gd);
+                list.Add((Game)item);
             }
         }
 
-        public async void UpdateCSVFile()
+        public void UpdateCSVFile(Game gm)
         {
-            string line = string.Empty;
+            //string line = string.Empty;
 
-            foreach(GameData item in list)
-            {
-                line = line + $"{item.Name}," +
-                              $"{item.Date}," +
-                              $"{item.StartTime}," +
-                              $"{item.EndTime}," +
-                              $"{item.Place}," +
-                              $"{item.Type}," +
-                              $"{item.MyName}," +
-                              $"{item.PairName}," +
-                              $"{item.RivalAName}," +
-                              $"{item.RivalBName}," +
-                              $"{item.MySetCount1}," +
-                              $"{item.RivalSetCount1}," +
-                              $"{item.MySetCount2}," +
-                              $"{item.RivalSetCount2}," +
-                              $"{item.MySetCount3}," +
-                              $"{item.RivalSetCount3}," +
-                              $"{item.MySetCount4}," +
-                              $"{item.RivalSetCount4}," +
-                              $"{item.MySetCount5}," +
-                              $"{item.RivalSetCount5}," +
-                              $"{item.Remark}\n";
-            }
+            //foreach(GameData item in list)
+            //{
+            //    line = line + $"{item.Name}," +
+            //                  $"{item.Date}," +
+            //                  $"{item.StartTime}," +
+            //                  $"{item.EndTime}," +
+            //                  $"{item.Place}," +
+            //                  $"{item.Type}," +
+            //                  $"{item.MyName}," +
+            //                  $"{item.PairName}," +
+            //                  $"{item.RivalAName}," +
+            //                  $"{item.RivalBName}," +
+            //                  $"{item.MySetCount1}," +
+            //                  $"{item.RivalSetCount1}," +
+            //                  $"{item.MySetCount2}," +
+            //                  $"{item.RivalSetCount2}," +
+            //                  $"{item.MySetCount3}," +
+            //                  $"{item.RivalSetCount3}," +
+            //                  $"{item.MySetCount4}," +
+            //                  $"{item.RivalSetCount4}," +
+            //                  $"{item.MySetCount5}," +
+            //                  $"{item.RivalSetCount5}," +
+            //                  $"{item.Remark}\n";
+            //}
 
-            IFolder rootFolder = FileSystem.Current.LocalStorage;
-            IFile file = await rootFolder.CreateFileAsync(textFileName, CreationCollisionOption.ReplaceExisting);
+            //IFolder rootFolder = FileSystem.Current.LocalStorage;
+            //IFile file = await rootFolder.CreateFileAsync(textFileName, CreationCollisionOption.ReplaceExisting);
 
-            await file.WriteAllTextAsync(line);
+            //await file.WriteAllTextAsync(line);
+
+            _db.SaveItem(gm);
         }
     }
 }

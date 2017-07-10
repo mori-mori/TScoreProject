@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					0EADD57A1EE568DA00AD6363 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = TM4L3ZMWGD;
+						DevelopmentTeam = MSDQFFFB37;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,10 +261,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TM4L3ZMWGD;
+				DEVELOPMENT_TEAM = MSDQFFFB37;
 				INFOPLIST_FILE = TScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = morimori.TScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.morimori.TScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,10 +274,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TM4L3ZMWGD;
+				DEVELOPMENT_TEAM = MSDQFFFB37;
 				INFOPLIST_FILE = TScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = morimori.TScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.morimori.TScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

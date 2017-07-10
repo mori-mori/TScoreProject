@@ -22422,7 +22422,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "E9E9E2A1-8E43-4180-9BD4-F4C975788BB5"
+	.asciz "C912CD7B-6834-4B19-8365-5CEDFAC2FEC4"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -22505,7 +22505,7 @@ _mono_aot_file_info:
 	.long 352,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 78,242,102,240,238,45,105,251,171,11,233,116,8,240,133,76
+	.byte 20,200,240,122,239,184,205,252,61,143,183,237,215,232,109,250
 	.globl _mono_aot_module_morimori_TScore_info
 	.align 3
 _mono_aot_module_morimori_TScore_info:

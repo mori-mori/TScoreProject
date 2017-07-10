@@ -5,8 +5,8 @@
 	<key>get-task-allow</key>
 	<true/>
 	<key>application-identifier</key>
-	<string>TM4L3ZMWGD.morimori.TScore</string>
+	<string>MSDQFFFB37.*</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>TM4L3ZMWGD</string>
+	<string>MSDQFFFB37</string>
 </dict>
 </plist>

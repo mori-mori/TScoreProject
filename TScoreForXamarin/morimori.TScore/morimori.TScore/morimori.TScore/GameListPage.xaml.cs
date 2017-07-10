@@ -13,7 +13,7 @@ namespace morimori.TScore
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameListPage : ContentPage
     {
-        private ObservableCollection<GameData> games = new ObservableCollection<GameData>();
+        private ObservableCollection<Game> games = new ObservableCollection<Game>();
 
         public GameListPage()
         {
@@ -38,7 +38,7 @@ namespace morimori.TScore
         private void gameListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ListView ls = (ListView)sender;
-            GameData gd = ls.SelectedItem as GameData;
+            var gd = ls.SelectedItem as Game;
             Navigation.PushAsync(new GameDetailPage(gd), true);
         }
     }

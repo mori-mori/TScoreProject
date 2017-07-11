@@ -34,7 +34,11 @@ namespace morimori.TScore
             });
         }
 
-
+        /// <summary>
+        /// 選択セル詳細へ画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gameListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ListView ls = (ListView)sender;

@@ -6,7 +6,6 @@
     <ContentPage.Content>
         <StackLayout>
             <local:SegView x:Name="segView" Clicked="MyBoxViewClicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

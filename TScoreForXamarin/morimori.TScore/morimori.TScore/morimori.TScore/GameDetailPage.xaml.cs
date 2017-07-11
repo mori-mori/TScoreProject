@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using PCLStorage;
 
@@ -21,7 +20,10 @@ namespace morimori.TScore
             DisplayGameData();
         }
 
-
+        /// <summary>
+        /// 画面遷移用
+        /// </summary>
+        /// <param name="game"></param>
         public GameDetailPage(Game game)
         {
             gameData = game;
@@ -35,8 +37,11 @@ namespace morimori.TScore
             DisplayGameData();
         }
 
-
-
+        /// <summary>
+        /// シングル・ダブルス選択
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void SegControl_ValueChanged(object sender, EventArgs e)
         {
             switch (SegControl.SelectedSegment)
@@ -52,8 +57,9 @@ namespace morimori.TScore
             }
         }
 
-
-
+        /// <summary>
+        /// 保存処理
+        /// </summary>
         private void SaveGameData()
         {
             if (string.IsNullOrWhiteSpace(gameName.Text))
@@ -97,12 +103,15 @@ namespace morimori.TScore
 
             GameDataManager.sharedInstance.list.Insert(0, newGame);
 
-            GameDataManager.sharedInstance.UpdateCSVFile(newGame);
+            GameDataManager.sharedInstance.UpdateGameList(newGame);
 
              Navigation.PopAsync(true);
         }
 
-
+        /// <summary>
+        /// 入力内容チェック
+        /// </summary>
+        /// <returns></returns>
         private bool CanSaveGame()
         {
             int mySet1;
@@ -143,7 +152,10 @@ namespace morimori.TScore
             return true;
         }
 
-
+        /// <summary>
+        /// 画面表示データ読込
+        /// </summary>
+        /// <returns></returns>
         private Game GetDisplayedGameData()
         {
             string myName;
@@ -181,29 +193,6 @@ namespace morimori.TScore
             string start = $"{startTime.Time.Hours}:{startTime.Time.Minutes}";
             string end = $"{endTime.Time.Hours}:{endTime.Time.Minutes}";
 
-            //string gameData = 
-            //    $"{gameName.Text}," +
-            //    $"{gameDate.Date.ToString("yyyy/MM/dd")}," +
-            //    $"{start}," +
-            //    $"{end}," +
-            //    $"{gamePlace.Text}," +
-            //    $"{SegControl.SelectedSegment.ToString()}," +
-            //    $"{myName}," +
-            //    $"{pairName}," +
-            //    $"{rivalAName}," +
-            //    $"{rivalBName}," +
-            //    $"{mySet1}," +
-            //    $"{rivalSet1}," +
-            //    $"{mySet2}," +
-            //    $"{rivalSet2}," +
-            //    $"{mySet3}," +
-            //    $"{rivalSet3}," +
-            //    $"{mySet4}," +
-            //    $"{rivalSet4}," +
-            //    $"{mySet5}," +
-            //    $"{rivalSet5}," +
-            //    $"{remarkEditor.Text}";
-
             var gm = new Game();
             gm.Name = gameName.Text;
             gm.Date = gameDate.Date.ToString("yyyy/MM/dd");
@@ -230,6 +219,9 @@ namespace morimori.TScore
             return gm;
         }
 
+        /// <summary>
+        /// 画面表示
+        /// </summary>
         private void DisplayGameData()
         {
             if (gameData == null)
@@ -285,6 +277,11 @@ namespace morimori.TScore
             }
         }
 
+        /// <summary>
+        /// 削除処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void deleteButton_Clicked(object sender, EventArgs e)
         {
             var result = await DisplayAlert("注意", "削除しても宜しいですか？", "OK", "キャンセル");
@@ -293,7 +290,7 @@ namespace morimori.TScore
             GameDataManager.sharedInstance.list.Remove(gameData);
 
             gameData.Delete = true;
-            GameDataManager.sharedInstance.UpdateCSVFile(gameData);
+            GameDataManager.sharedInstance.UpdateGameList(gameData);
 
            await Navigation.PopAsync(true);
         }

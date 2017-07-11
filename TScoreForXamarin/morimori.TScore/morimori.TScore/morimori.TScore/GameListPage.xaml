@@ -21,39 +21,6 @@
                                         </StackLayout>
                                     </StackLayout>
                                     <Label Text="{Binding Date}" HorizontalOptions="End" VerticalOptions="End"/>
-
-                                    <!--<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="1st："/>
-                                            <Label Text="{Binding MySetCount1}"/>
-                                            <Label Text="-" Margin="10, 0, 10, 0"/>
-                                            <Label Text="{Binding RivalSetCount1}"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="2st："/>
-                                            <Label Text="{Binding MySetCount2}"/>
-                                            <Label Text="-" Margin="10, 0, 10, 0"/>
-                                            <Label Text="{Binding RivalSetCount2}"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="3st："/>
-                                            <Label Text="{Binding MySetCount3}" />
-                                            <Label Text="-" Margin="10, 0, 10, 0"/>
-                                            <Label Text="{Binding RivalSetCount3}"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="4st："/>
-                                            <Label Text="{Binding MySetCount4}"/>
-                                            <Label Text="-" Margin="10, 0, 10, 0"/>
-                                            <Label Text="{Binding RivalSetCount4}"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="5st："/>
-                                            <Label Text="{Binding MySetCount5}"/>
-                                            <Label Text="-" Margin="10, 0, 10, 0"/>
-                                            <Label Text="{Binding RivalSetCount5}"/>
-                                        </StackLayout>
-                                    </StackLayout>-->
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

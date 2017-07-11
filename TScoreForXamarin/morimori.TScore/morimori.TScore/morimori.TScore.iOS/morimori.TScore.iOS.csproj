@@ -50,10 +50,10 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer: Tatsunori Morita (WHTNM243Z7)</CodesignKey>
+    <CodesignKey>iPhone Distribution: Tatsunori Morita (MSDQFFFB37)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>8599bc1b-5763-4283-857f-8b4e68973887</CodesignProvision>
+    <CodesignProvision>cb5cd89f-27a6-4d95-a19f-e4ee64db7e51</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>

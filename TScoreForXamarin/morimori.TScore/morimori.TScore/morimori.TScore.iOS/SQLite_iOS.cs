@@ -14,7 +14,7 @@ namespace morimori.TScore.iOS
         {
             var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             var libraryPath = Path.Combine(documentsPath, "..", "Library");
-            var path = Path.Combine(libraryPath, "TodoSQLite.db3");
+            var path = Path.Combine(libraryPath, "GameListSQLite.db3");
             return new SQLiteConnection(new SQLitePlatformIOS(), path);
         }
     }

@@ -13,6 +13,8 @@ namespace morimori.TScore
             InitializeComponent();
 
             MainPage = new NavigationPage(new GameListPage());
+            //MainPage = new NavigationPage(new MainPage());
+
         }
 
         protected override void OnStart()

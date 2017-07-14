@@ -259,7 +259,14 @@ namespace morimori.TScore
             string start = $"{startTime.Time.Hours}:{startTime.Time.Minutes}";
             string end = $"{endTime.Time.Hours}:{endTime.Time.Minutes}";
 
+            int num = 0; 
+            if (gameData != null)
+            {
+                num = gameData.Id;
+            }
+
             var gm = new Game();
+            gm.Id = num;
             gm.Name = gameName.Text;
             gm.Date = gameDate.Date.ToString("yyyy/MM/dd");
             gm.StartTime = start;

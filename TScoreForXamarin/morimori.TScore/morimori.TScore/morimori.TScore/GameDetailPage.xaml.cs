@@ -8,6 +8,7 @@ namespace morimori.TScore
     public partial class GameDetailPage : ContentPage
     {
         private Game gameData;
+        private Picker gameType = new Picker();
 
         public GameDetailPage()
         {
@@ -17,6 +18,20 @@ namespace morimori.TScore
             
             SegControl.ValueChanged += SegControl_ValueChanged;
 
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                string[] items = { "シングル", "ダブルス" };
+                foreach (var item in items)
+                {
+                    gameType.Items.Add(item);
+                }
+                gameType.SelectedIndex = 0;
+
+                gameType.SelectedIndexChanged += SelectedGameType;
+
+                GameTypeStack.Children.Add(gameType);
+            }
+            
             DisplayGameData();
         }
 
@@ -34,7 +49,36 @@ namespace morimori.TScore
 
             SegControl.ValueChanged += SegControl_ValueChanged;
 
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                string[] items = { "シングル", "ダブルス" };
+                foreach (var item in items)
+                {
+                    gameType.Items.Add(item);
+                }
+                //gameType.SelectedIndex = 0;
+
+                gameType.SelectedIndexChanged += SelectedGameType;
+
+                GameTypeStack.Children.Add(gameType);
+            }
+
             DisplayGameData();
+        }
+
+        void SelectedGameType(object sender, EventArgs e)
+        {
+            switch (gameType.SelectedIndex)
+            {
+                case 0:
+                    singleArea.IsVisible = true;
+                    doublesArea.IsVisible = false;
+                    break;
+                case 1:
+                    singleArea.IsVisible = false;
+                    doublesArea.IsVisible = true;
+                    break;
+            }
         }
 
         /// <summary>
@@ -44,6 +88,8 @@ namespace morimori.TScore
         /// <param name="e"></param>
         void SegControl_ValueChanged(object sender, EventArgs e)
         {
+            if (Device.RuntimePlatform == Device.Android) return;
+
             switch (SegControl.SelectedSegment)
             {
                 case 0:
@@ -62,13 +108,23 @@ namespace morimori.TScore
         /// </summary>
         private void SaveGameData()
         {
+            int selectIndex = 0;
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                selectIndex = SegControl.SelectedSegment;
+            }
+            else if (Device.RuntimePlatform == Device.Android)
+            {
+                selectIndex = gameType.SelectedIndex;
+            }
+
             if (string.IsNullOrWhiteSpace(gameName.Text))
             {
                 DisplayAlert("未入力", "試合名を入力して下さい。", "OK");
                 return;
             }
 
-            if (SegControl.SelectedSegment == 0)
+            if (selectIndex == 0)
             {
                 if (string.IsNullOrWhiteSpace(myNameSingle.Text) || string.IsNullOrWhiteSpace(rivalNameSingle.Text))
                 {
@@ -163,7 +219,17 @@ namespace morimori.TScore
             string rivalAName;
             string rivalBName;
 
-            if (SegControl.SelectedSegment == 0)
+            int selectIndex = 0;
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                selectIndex = SegControl.SelectedSegment;
+            }
+            else if (Device.RuntimePlatform == Device.Android)
+            {
+                selectIndex = gameType.SelectedIndex;
+            }
+
+            if (selectIndex == 0)
             {
                 myName = myNameSingle.Text;
                 pairName = string.Empty;
@@ -199,7 +265,7 @@ namespace morimori.TScore
             gm.StartTime = start;
             gm.EndTime = end;
             gm.Place = gamePlace.Text;
-            gm.Type = SegControl.SelectedSegment;
+            gm.Type = selectIndex;
             gm.MyName = myName;
             gm.PairName = pairName;
             gm.RivalAName = rivalAName;
@@ -245,7 +311,15 @@ namespace morimori.TScore
 
                 if (gameData.Type == 0)
                 {
-                    SegControl.SelectedSegment = 0;
+                    if (Device.RuntimePlatform == Device.iOS)
+                    {
+                        SegControl.SelectedSegment = 0;
+                    }
+                    else if (Device.RuntimePlatform == Device.Android)
+                    {
+                        gameType.SelectedIndex = 0;
+                    }
+
                     singleArea.IsVisible = true;
                     doublesArea.IsVisible = false;
                     myNameSingle.Text = gameData.MyName;
@@ -253,7 +327,15 @@ namespace morimori.TScore
                 }
                 else
                 {
-                    SegControl.SelectedSegment = 1;
+                    if (Device.RuntimePlatform == Device.iOS)
+                    {
+                        SegControl.SelectedSegment = 1;
+                    }
+                    else if (Device.RuntimePlatform == Device.Android)
+                    {
+                        gameType.SelectedIndex = 1;
+                    }
+
                     singleArea.IsVisible = false;
                     doublesArea.IsVisible = true;
                     myNameDoubles.Text = gameData.MyName;

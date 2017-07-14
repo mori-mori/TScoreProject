@@ -8,6 +8,8 @@
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/PCLStorage.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/SegmentedControl.FormsPlugin.Abstractions.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/SegmentedControl.FormsPlugin.Android.dll
+/Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/SQLite.Net.dll
+/Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/SQLite.Net.Platform.XamarinAndroid.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Android.Support.Design.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Android.Support.v4.dll
@@ -34,7 +36,6 @@
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/bin/Debug/Xamarin.Forms.Xaml.xml
-/Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/obj/Debug/morimori.TScore.Android.csprojResolveAssemblyReference.cache
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/obj/Debug/morimori.TScore.Android.csproj.CoreCompileInputs.cache
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/obj/Debug/morimori.TScore.Android.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore.Android/obj/Debug/morimori.TScore.Android.pdb

@@ -15,6 +15,7 @@
                 </StackLayout>
                 <Entry x:Name="gamePlace" Placeholder="試合会場" />
                 <StackLayout Margin="20, 20, 20, 20">
+                    <StackLayout x:Name="GameTypeStack"></StackLayout>
                     <StackLayout>
                         <controls:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
                             <controls:SegmentedControl.Children>
@@ -25,12 +26,12 @@
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
-                    <StackLayout x:Name="singleArea" Orientation="Vertical" IsVisible="False">
+                    <StackLayout x:Name="singleArea" Orientation="Vertical">
                         <Entry x:Name="myNameSingle" Placeholder="自分の名前" />
                         <Label Text="VS" HorizontalTextAlignment="Center" />
                         <Entry x:Name="rivalNameSingle" Placeholder="ライバルの名前" />
                     </StackLayout>
-                    <StackLayout x:Name="doublesArea" Orientation="Vertical" IsVisible="True">
+                    <StackLayout x:Name="doublesArea" Orientation="Vertical">
                         <StackLayout Orientation="Horizontal">
                             <Entry x:Name="myNameDoubles" Placeholder="自分の名前" HorizontalOptions="FillAndExpand"/>
                             <Entry x:Name="pairNameDoubles" Placeholder="ペアの名前" HorizontalOptions="FillAndExpand"/>

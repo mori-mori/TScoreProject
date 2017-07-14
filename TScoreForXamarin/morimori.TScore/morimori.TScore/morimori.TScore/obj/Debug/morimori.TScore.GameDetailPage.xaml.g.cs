@@ -31,6 +31,9 @@ namespace morimori.TScore {
         private global::Xamarin.Forms.Entry gamePlace;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout GameTypeStack;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::SegmentedControl.FormsPlugin.Abstractions.SegmentedControl SegControl;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -101,6 +104,7 @@ namespace morimori.TScore {
             startTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TimePicker>(this, "startTime");
             endTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TimePicker>(this, "endTime");
             gamePlace = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "gamePlace");
+            GameTypeStack = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "GameTypeStack");
             SegControl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SegmentedControl.FormsPlugin.Abstractions.SegmentedControl>(this, "SegControl");
             singleArea = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "singleArea");
             myNameSingle = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "myNameSingle");

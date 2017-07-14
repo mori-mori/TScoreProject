@@ -4,7 +4,7 @@
              x:Class="morimori.TScore.GameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding games}" HasUnevenRows="True">
+            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -21,6 +21,7 @@
                                         </StackLayout>
                                     </StackLayout>
                                     <Label Text="{Binding Date}" HorizontalOptions="End" VerticalOptions="End"/>
+                                    <Label Text="{Binding MySet1Count}" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

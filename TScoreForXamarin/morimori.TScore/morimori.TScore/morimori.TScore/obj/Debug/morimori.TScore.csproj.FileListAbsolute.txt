@@ -25,11 +25,7 @@
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore/obj/Debug/morimori.TScore.SegmentTest.xaml.g.cs
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore/obj/Debug/morimori.TScore.dll
 /Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore/obj/Debug/morimori.TScore.pdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.MainPage.xaml.g.cs
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.App.xaml.g.cs
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.GameDetailPage.xaml.g.cs
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.GameListPage.xaml.g.cs
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.SegmentTest.xaml.g.cs
+/Users/tatsunori/Projects/TScoreProject/TScoreForXamarin/morimori.TScore/morimori.TScore/morimori.TScore/bin/Debug/SQLite.Net.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\morimori.TScore.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\morimori.TScore.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\PCLStorage.Abstractions.dll
@@ -46,5 +42,11 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\Xamarin.Forms.Platform.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\Xamarin.Forms.Xaml.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Debug\Xamarin.Forms.Xaml.xml
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.csprojResolveAssemblyReference.cache
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.MainPage.xaml.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.App.xaml.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.GameDetailPage.xaml.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.GameListPage.xaml.g.cs
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.SegmentTest.xaml.g.cs
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.pdb

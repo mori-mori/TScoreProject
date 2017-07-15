@@ -4,22 +4,25 @@
              x:Class="morimori.TScore.GameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" RowHeight="200">
+            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
-                                <StackLayout HeightRequest="80" Orientation="Vertical" BackgroundColor="#2e8b57">
-                                    <Label Text="{Binding Name}" HorizontalOptions="Start" TextColor="White"/>
-                                    <Label Text="{Binding Date}" HorizontalOptions="Start" TextColor="White" FontSize="Small"/>
+                                <StackLayout Orientation="Vertical" BackgroundColor="#2e8b57">
+                                    <StackLayout Margin="20,20,20,20">
+                                        <Label Text="{Binding Name}" HorizontalOptions="Start" TextColor="White" FontSize="Medium"/>
+                                        <Label Text="{Binding Date}" HorizontalOptions="Start" TextColor="White" FontSize="Small"/>
+                                    </StackLayout>
+                                    
                                 </StackLayout>
-                                <StackLayout BackgroundColor="Pink">
+                                <StackLayout Margin="20,20,20,20">
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,5">
-                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                                             <Label Text="{Binding MyName}" FontSize="Small"/>
                                             <Label Text="{Binding PairName}" FontSize="Small"/>
                                         </StackLayout>
-                                        <StackLayout Orientation="Horizontal" BackgroundColor="Red" VerticalOptions="Center">
+                                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                                             <Label Text="{Binding MySet1Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding MySet2Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding MySet3Count}" FontSize="Small" HorizontalOptions="End"/>
@@ -29,11 +32,11 @@
                                     </StackLayout>
 
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                                             <Label Text="{Binding RivalAName}" FontSize="Small"/>
                                             <Label Text="{Binding RivalBName}" FontSize="Small"/>
                                         </StackLayout>
-                                        <StackLayout Orientation="Horizontal" BackgroundColor="Red" VerticalOptions="Center">
+                                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                                             <Label Text="{Binding RivalSet1Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding RivalSet2Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding RivalSet3Count}" FontSize="Small" HorizontalOptions="End"/>

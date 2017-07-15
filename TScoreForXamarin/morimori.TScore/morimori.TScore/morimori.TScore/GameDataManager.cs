@@ -61,16 +61,62 @@ namespace morimori.TScore
                 gameString.PairName = item.PairName;
                 gameString.RivalAName = item.RivalAName;
                 gameString.RivalBName = item.RivalBName;
-                gameString.MySet1Count = item.MySet1Count.ToString();
-                gameString.RivalSet1Count = item.RivalSet1Count.ToString();
-                gameString.MySet2Count = item.MySet2Count.ToString();
-                gameString.RivalSet2Count = item.RivalSet2Count.ToString();
-                gameString.MySet3Count = item.MySet3Count.ToString();
-                gameString.RivalSet3Count = item.RivalSet3Count.ToString();
-                gameString.MySet4Count = item.MySet4Count.ToString();
-                gameString.RivalSet4Count = item.RivalSet4Count.ToString();
-                gameString.MySet5Count = item.MySet5Count.ToString();
-                gameString.RivalSet5Count = item.RivalSet5Count.ToString();
+
+                if (item.MySet1Count == 0 && item.RivalSet1Count == 0)
+                {
+                    gameString.MySet1Count = string.Empty;
+                    gameString.RivalSet1Count = string.Empty;
+                }
+                else
+                {
+                    gameString.MySet1Count = item.MySet1Count.ToString();
+                    gameString.RivalSet1Count = item.RivalSet1Count.ToString();
+                }
+
+                if (item.MySet2Count == 0 && item.RivalSet2Count == 0)
+                {
+                    gameString.MySet2Count = string.Empty;
+                    gameString.RivalSet2Count = string.Empty;
+                }
+                else
+                {
+                    gameString.MySet2Count = item.MySet2Count.ToString();
+                    gameString.RivalSet2Count = item.RivalSet2Count.ToString();
+                }
+
+                if (item.MySet3Count == 0 && item.RivalSet3Count == 0)
+                {
+                    gameString.MySet3Count = string.Empty;
+                    gameString.RivalSet3Count = string.Empty;
+                }
+                else
+                {
+                    gameString.MySet3Count = item.MySet3Count.ToString();
+                    gameString.RivalSet3Count = item.RivalSet3Count.ToString();
+                }
+
+                if (item.MySet4Count == 0 && item.RivalSet4Count == 0)
+                {
+                    gameString.MySet4Count = string.Empty;
+                    gameString.RivalSet4Count = string.Empty;
+                }
+                else
+                {
+                    gameString.MySet4Count = item.MySet4Count.ToString();
+                    gameString.RivalSet4Count = item.RivalSet4Count.ToString();
+                }
+
+                if (item.MySet5Count == 0 && item.RivalSet5Count == 0)
+                {
+                    gameString.MySet5Count = string.Empty;
+                    gameString.RivalSet5Count = string.Empty;
+                }
+                else
+                {
+                    gameString.MySet5Count = item.MySet5Count.ToString();
+                    gameString.RivalSet5Count = item.RivalSet5Count.ToString();
+                }
+               
                 gameString.Remark = item.Remark;
 
                 displayer.Add(gameString);

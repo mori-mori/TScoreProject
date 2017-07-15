@@ -59,7 +59,7 @@ namespace morimori.TScore
             //gameListView.ItemsSource = games;
             //GameDataManager.sharedInstance.LoadGameList();
             gameListView.ItemsSource = GameDataManager.sharedInstance.LoadGameList();
-
+            
             ToolbarItems.Add(new ToolbarItem
             {
                 Text = "新規追加",

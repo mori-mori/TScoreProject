@@ -12,9 +12,12 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new GameListPage());
-            //MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new GameListPage());
 
+            var navi = new NavigationPage(new GameListPage());
+            navi.BarBackgroundColor = Color.FromHex("1a713d");
+            navi.BarTextColor = Color.White;
+            MainPage = navi;
         }
 
         protected override void OnStart()

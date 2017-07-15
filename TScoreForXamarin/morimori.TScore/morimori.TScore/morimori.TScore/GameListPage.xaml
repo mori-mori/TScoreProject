@@ -4,43 +4,41 @@
              x:Class="morimori.TScore.GameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" HasUnevenRows="True">
+            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" RowHeight="200">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
-                                <StackLayout Orientation="Vertical" BackgroundColor="PowderBlue">
+                                <StackLayout HeightRequest="80" Orientation="Vertical" BackgroundColor="#2e8b57">
                                     <Label Text="{Binding Name}" HorizontalOptions="Start" TextColor="White"/>
-                                    <Label Text="{Binding Date}" HorizontalOptions="Start" TextColor="White"/>
+                                    <Label Text="{Binding Date}" HorizontalOptions="Start" TextColor="White" FontSize="Small"/>
                                 </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <StackLayout Orientation="Vertical">
-                                        <StackLayout Orientation="Horizontal">
-                                            <StackLayout Orientation="Vertical" BackgroundColor="Blue">
-                                                <Label Text="{Binding MyName}"/>
-                                                <Label Text="{Binding PairName}"/>
-                                            </StackLayout>
-                                            <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Center">
-                                                <Label Text="{Binding MySet1Count}"/>
-                                                <Label Text="{Binding MySet2Count}"/>
-                                                <Label Text="{Binding MySet3Count}"/>
-                                                <Label Text="{Binding MySet4Count}"/>
-                                                <Label Text="{Binding MySet5Count}"/>
-                                            </StackLayout>
+                                <StackLayout BackgroundColor="Pink">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,5">
+                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue" HorizontalOptions="FillAndExpand">
+                                            <Label Text="{Binding MyName}" FontSize="Small"/>
+                                            <Label Text="{Binding PairName}" FontSize="Small"/>
                                         </StackLayout>
-                                        
-                                        <StackLayout Orientation="Horizontal">
-                                            <StackLayout Orientation="Vertical">
-                                                <Label Text="{Binding RivalAName}"/>
-                                                <Label Text="{Binding RivalBName}"/>
-                                            </StackLayout>
-                                            <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Center">
-                                                <Label Text="{Binding RivalSet1Count}"/>
-                                                <Label Text="{Binding RivalSet2Count}"/>
-                                                <Label Text="{Binding RivalSet3Count}"/>
-                                                <Label Text="{Binding RivalSet4Count}"/>
-                                                <Label Text="{Binding RivalSet5Count}"/>
-                                            </StackLayout>
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="Red" VerticalOptions="Center">
+                                            <Label Text="{Binding MySet1Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding MySet2Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding MySet3Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding MySet4Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding MySet5Count}" FontSize="Small" HorizontalOptions="End"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Vertical" BackgroundColor="Blue" HorizontalOptions="FillAndExpand">
+                                            <Label Text="{Binding RivalAName}" FontSize="Small"/>
+                                            <Label Text="{Binding RivalBName}" FontSize="Small"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="Red" VerticalOptions="Center">
+                                            <Label Text="{Binding RivalSet1Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding RivalSet2Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding RivalSet3Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding RivalSet4Count}" FontSize="Small" HorizontalOptions="End"/>
+                                            <Label Text="{Binding RivalSet5Count}" FontSize="Small" HorizontalOptions="End"/>
                                         </StackLayout>
                                     </StackLayout>
                                 </StackLayout>

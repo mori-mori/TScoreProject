@@ -152,14 +152,17 @@ namespace morimori.TScore
 
             var newGame = GetDisplayedGameData();
 
-            if (gameData != null)
-            {
-                GameDataManager.sharedInstance.list.Remove(gameData);
-            }
+            //if (gameData != null)
+            //{
+            //    //GameDataManager.sharedInstance.list.Remove(gameData);
+            //    GameDataManager.sharedInstance.Remove(gameData);
+            //}
 
-            GameDataManager.sharedInstance.list.Insert(0, newGame);
+            ////GameDataManager.sharedInstance.list.Insert(0, newGame);
+            //GameDataManager.sharedInstance.Insert(newGame);
 
             GameDataManager.sharedInstance.UpdateGameList(newGame);
+            GameDataManager.sharedInstance.LoadGameList();
 
              Navigation.PopAsync(true);
         }
@@ -376,12 +379,13 @@ namespace morimori.TScore
             var result = await DisplayAlert("注意", "削除しても宜しいですか？", "OK", "キャンセル");
             if (!result) return;
 
-            GameDataManager.sharedInstance.list.Remove(gameData);
+            GameDataManager.sharedInstance.Remove(gameData);
 
             gameData.Delete = true;
             GameDataManager.sharedInstance.UpdateGameList(gameData);
+            GameDataManager.sharedInstance.LoadGameList();
 
-           await Navigation.PopAsync(true);
+            await Navigation.PopAsync(true);
         }
     }
 }

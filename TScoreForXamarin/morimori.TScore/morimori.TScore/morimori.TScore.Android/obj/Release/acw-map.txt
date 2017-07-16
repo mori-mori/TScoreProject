@@ -2,6 +2,10 @@ morimori.TScore.Droid.MainActivity, morimori.TScore.Android;md5b962277364afac146
 morimori.TScore.Droid.MainActivity, morimori.TScore.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b962277364afac14622164bdbe3d2f1f.MainActivity
 morimori.TScore.Droid.MainActivity;md5b962277364afac14622164bdbe3d2f1f.MainActivity
 morimori.tscore.droid.MainActivity;md5b962277364afac14622164bdbe3d2f1f.MainActivity
+morimori.TScore.Droid.SplashActivity, morimori.TScore.Android;md5b962277364afac14622164bdbe3d2f1f.SplashActivity
+morimori.TScore.Droid.SplashActivity, morimori.TScore.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b962277364afac14622164bdbe3d2f1f.SplashActivity
+morimori.TScore.Droid.SplashActivity;md5b962277364afac14622164bdbe3d2f1f.SplashActivity
+morimori.tscore.droid.SplashActivity;md5b962277364afac14622164bdbe3d2f1f.SplashActivity
 SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer, SegmentedControl.FormsPlugin.Android;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
 SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer, SegmentedControl.FormsPlugin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer
 SegmentedControl.FormsPlugin.Android.SegmentedControlRenderer;md516d2c65c18b64f0f34601b03934406fd.SegmentedControlRenderer

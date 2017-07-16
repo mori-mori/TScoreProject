@@ -1,12 +1,33 @@
-﻿<Properties StartupConfiguration="{E5AE2EA6-3A1C-4743-9D62-531E92980C80}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore.iOS/Resources/LaunchScreen.storyboard">
+﻿<Properties StartupConfiguration="{CA051754-5BA0-497D-ABEE-8F293951D34C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="morimori.TScore/morimori.TScore.Android/Resources/drawable/splash_screen.xml">
     <Files>
-      <File FileName="morimori.TScore/morimori.TScore.iOS/Info.plist" />
-      <File FileName="morimori.TScore/morimori.TScore.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="morimori.TScore/morimori.TScore.Android/Resources/values/styles.xml" Line="7" Column="38" />
+      <File FileName="morimori.TScore/morimori.TScore.Android/SplashActivity.cs" Line="28" Column="9" />
+      <File FileName="morimori.TScore/morimori.TScore.Android/MainActivity.cs" Line="7" Column="22" />
+      <File FileName="morimori.TScore/morimori.TScore.Android/Resources/drawable/splash_screen.xml" Line="15" Column="14" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="morimori.TScore" expanded="True">
+            <Node name="morimori.TScore.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True">
+                  <Node name="splash_screen.xml" selected="True" />
+                </Node>
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.morimori.TScore.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.morimori.TScore.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ISV31L6234L120F3" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|ARM" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

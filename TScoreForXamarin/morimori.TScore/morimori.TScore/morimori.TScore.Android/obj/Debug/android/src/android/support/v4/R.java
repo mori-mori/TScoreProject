@@ -2562,10 +2562,12 @@ containing a value of this type.
         public static int mr_ic_pause_light=0x7f02009e;
         public static int mr_ic_play_dark=0x7f02009f;
         public static int mr_ic_play_light=0x7f0200a0;
-        public static int notification_template_icon_bg=0x7f0200a4;
+        public static int notification_template_icon_bg=0x7f0200a6;
         public static int segmented_control_background=0x7f0200a1;
         public static int segmented_control_first_background=0x7f0200a2;
         public static int segmented_control_last_background=0x7f0200a3;
+        public static int splash=0x7f0200a4;
+        public static int splash_screen=0x7f0200a5;
     }
     public static final class id {
         public static int SegControl=0x7f070098;
@@ -2850,7 +2852,7 @@ containing a value of this type.
         public static int Animation_AppCompat_Dialog=0x7f0a00a3;
         public static int Animation_AppCompat_DropDownUp=0x7f0a00a4;
         public static int Animation_Design_BottomSheetDialog=0x7f0a015a;
-        public static int AppCompatDialogStyle=0x7f0a0174;
+        public static int AppCompatDialogStyle=0x7f0a0175;
         public static int Base_AlertDialog_AppCompat=0x7f0a00a5;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0a00a6;
         public static int Base_Animation_AppCompat_Dialog=0x7f0a00a7;
@@ -2998,10 +3000,11 @@ containing a value of this type.
         public static int CardView=0x7f0a0017;
         public static int CardView_Dark=0x7f0a0019;
         public static int CardView_Light=0x7f0a001a;
-        public static int MainTheme=0x7f0a0172;
+        public static int MainTheme=0x7f0a0173;
         /**  Base theme applied no matter what API 
          */
-        public static int MainTheme_Base=0x7f0a0173;
+        public static int MainTheme_Base=0x7f0a0174;
+        public static int MyTheme_Splash=0x7f0a0172;
         public static int Platform_AppCompat=0x7f0a0032;
         public static int Platform_AppCompat_Light=0x7f0a0033;
         public static int Platform_ThemeOverlay_AppCompat=0x7f0a0095;

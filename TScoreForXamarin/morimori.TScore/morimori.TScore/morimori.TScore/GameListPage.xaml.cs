@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Collections.ObjectModel;
+using morimori.TScore.Resources;
 
 namespace morimori.TScore
 {
@@ -21,7 +22,8 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            Title = "トーナメント一覧";
+            //Title = "トーナメント一覧";
+            Title = AppResources.Title;
 
             GameDataManager.sharedInstance.LoadGameList();
 
@@ -62,7 +64,9 @@ namespace morimori.TScore
             
             ToolbarItems.Add(new ToolbarItem
             {
-                Text = "新規追加",
+                //Text = "新規追加",
+                Text = AppResources.NewEntry,
+
                 Command = new Command(() => Navigation.PushAsync(new GameDetailPage(), true))
             });
         }

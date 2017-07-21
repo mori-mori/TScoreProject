@@ -2,74 +2,74 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:controls="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
-             xmlns:local="clr-namespace:morimori.TScore"
+             xmlns:local="clr-namespace:morimori.TScore;assembly=morimori.TScore"
              x:Class="morimori.TScore.GameDetailPage">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" Margin="20, 20, 20, 0">
-                <Entry x:Name="gameName" Placeholder="試合名"/>
+                <Entry x:Name="gameName" Placeholder="{local:TranslateExtension Key = GameName}"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 20, 0, 20">
                     <DatePicker x:Name="gameDate" HorizontalOptions="FillAndExpand" />
                     <TimePicker x:Name="startTime" HorizontalOptions="FillAndExpand" />
                     <TimePicker x:Name="endTime" HorizontalOptions="FillAndExpand" />
                 </StackLayout>
-                <Entry x:Name="gamePlace" Placeholder="試合会場" />
+                <Entry x:Name="gamePlace" Placeholder="{local:TranslateExtension Key = GamePlace}" />
                 <StackLayout Margin="20, 20, 20, 20">
                     <StackLayout x:Name="GameTypeStack"></StackLayout>
                     <StackLayout>
                         <controls:SegmentedControl x:Name="SegControl" TintColor="#007AFF" SelectedSegment="0">
                             <controls:SegmentedControl.Children>
-                                <controls:SegmentedControlOption Text="シングルス" />
-                                <controls:SegmentedControlOption Text="ダブルス" />
+                                <controls:SegmentedControlOption Text="{local:TranslateExtension Key = Singles}" />
+                                <controls:SegmentedControlOption Text="{local:TranslateExtension Key = Doubles}" />
                             </controls:SegmentedControl.Children>
                         </controls:SegmentedControl>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
                     <StackLayout x:Name="singleArea" Orientation="Vertical">
-                        <Entry x:Name="myNameSingle" Placeholder="自分の名前" />
+                        <Entry x:Name="myNameSingle" Placeholder="{local:TranslateExtension Key = MyName}" />
                         <Label Text="VS" HorizontalTextAlignment="Center" />
-                        <Entry x:Name="rivalNameSingle" Placeholder="ライバルの名前" />
+                        <Entry x:Name="rivalNameSingle" Placeholder="{local:TranslateExtension Key = RivalName}" />
                     </StackLayout>
                     <StackLayout x:Name="doublesArea" Orientation="Vertical">
                         <StackLayout Orientation="Horizontal">
-                            <Entry x:Name="myNameDoubles" Placeholder="自分の名前" HorizontalOptions="FillAndExpand"/>
-                            <Entry x:Name="pairNameDoubles" Placeholder="ペアの名前" HorizontalOptions="FillAndExpand"/>
+                            <Entry x:Name="myNameDoubles" Placeholder="{local:TranslateExtension Key = MyName}" HorizontalOptions="FillAndExpand"/>
+                            <Entry x:Name="pairNameDoubles" Placeholder="{local:TranslateExtension Key = PairName}" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
                         <Label Text="VS" HorizontalTextAlignment="Center" />
                         <StackLayout Orientation="Horizontal">
-                            <Entry x:Name="rivalANameDoubles" Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
-                            <Entry x:Name="rivalBNameDoubles" Placeholder="ライバルの名前" HorizontalOptions="FillAndExpand"/>
+                            <Entry x:Name="rivalANameDoubles" Placeholder="{local:TranslateExtension Key = RivalName}" HorizontalOptions="FillAndExpand"/>
+                            <Entry x:Name="rivalBNameDoubles" Placeholder="{local:TranslateExtension Key = RivalName}" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Margin="0, 20, 0, 20">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="1セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Label Text="{local:TranslateExtension Key = Set1}" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
                         <Entry x:Name="mySetCount1" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="rivalSetCount1" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="2セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Label Text="{local:TranslateExtension Key = Set2}" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
                         <Entry x:Name="mySetCount2" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="rivalSetCount2" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="3セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Label Text="{local:TranslateExtension Key = Set3}" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
                         <Entry x:Name="mySetCount3" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="rivalSetCount3" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="4セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Label Text="{local:TranslateExtension Key = Set4}" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
                         <Entry x:Name="mySetCount4" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="rivalSetCount4" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="5セット：" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                        <Label Text="{local:TranslateExtension Key = Set5}" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
                         <Entry x:Name="mySetCount5" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="rivalSetCount5" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
@@ -81,7 +81,7 @@
                             </Editor.Effects>
                         </Editor>
                     </StackLayout>
-                    <Button x:Name="deleteButton" Text="削除" TextColor="Red" BorderColor="Red" BorderWidth="1" Clicked="deleteButton_Clicked"/>
+                    <Button x:Name="deleteButton" Text="{local:TranslateExtension Key = Delete}" TextColor="Red" BorderColor="Red" BorderWidth="1" Clicked="deleteButton_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

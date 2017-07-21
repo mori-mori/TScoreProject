@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morimori.TScore.Android", "morimori.TScore\morimori.TScore.Android\morimori.TScore.Android.csproj", "{CA051754-5BA0-497D-ABEE-8F293951D34C}"
 EndProject
@@ -228,6 +228,7 @@ Global
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.Ad-Hoc|x64.ActiveCfg = Ad-Hoc|iPhone
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.Ad-Hoc|x86.ActiveCfg = Ad-Hoc|iPhone
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
+		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.AppStore|Any CPU.Build.0 = AppStore|iPhone
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.AppStore|ARM.ActiveCfg = AppStore|iPhone
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
 		{E5AE2EA6-3A1C-4743-9D62-531E92980C80}.AppStore|iPhone.Build.0 = AppStore|iPhone

@@ -5,6 +5,8 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\PCLStorage.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SegmentedControl.FormsPlugin.Abstractions.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SegmentedControl.FormsPlugin.iOS.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
@@ -20,6 +22,7 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll.mdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\PCLStorage.Abstractions.xml
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\PCLStorage.xml
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\ja\morimori.TScore.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
@@ -54,13 +57,11 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\optimized\
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.exe
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.pdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.dll
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\morimori.TScore.dll.mdb

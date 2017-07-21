@@ -4,6 +4,8 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\PCLStorage.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SegmentedControl.FormsPlugin.Abstractions.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SegmentedControl.FormsPlugin.iOS.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SQLite.Net.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SQLite.Net.Platform.XamarinIOS.Unified.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\Xamarin.Forms.Core.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\Xamarin.Forms.Platform.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\Xamarin.Forms.Platform.iOS.dll
@@ -56,10 +58,6 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\ibtool\_BundleResourceWithLogicalName.items
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\actool\_PartialAppManifest.items
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\actool\_BundleResourceWithLogicalName.items
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\optimized\Artboard-960@2x.png
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\optimized\Artboard-1136@4x.png
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\optimized\
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\morimori.TScore.iOS.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\morimori.TScore.iOS.exe
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SQLite.Net.dll
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\SQLite.Net.Platform.XamarinIOS.Unified.dll

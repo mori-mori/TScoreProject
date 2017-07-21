@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using PCLStorage;
+using morimori.TScore.Resources;
 
 namespace morimori.TScore
 {
@@ -14,13 +15,13 @@ namespace morimori.TScore
         {
             InitializeComponent();
 
-            ToolbarItems.Add(new ToolbarItem { Text = "保存", Command = new Command(SaveGameData) });
+            ToolbarItems.Add(new ToolbarItem { Text = AppResources.Save, Command = new Command(SaveGameData) });
             
             SegControl.ValueChanged += SegControl_ValueChanged;
 
             if (Device.RuntimePlatform == Device.Android)
             {
-                string[] items = { "シングル", "ダブルス" };
+                string[] items = { AppResources.Singles, AppResources.Doubles };
                 foreach (var item in items)
                 {
                     gameType.Items.Add(item);
@@ -45,13 +46,13 @@ namespace morimori.TScore
 
             InitializeComponent();
 
-            ToolbarItems.Add(new ToolbarItem { Text = "保存", Command = new Command(SaveGameData) });
+            ToolbarItems.Add(new ToolbarItem { Text = AppResources.Save, Command = new Command(SaveGameData) });
 
             SegControl.ValueChanged += SegControl_ValueChanged;
 
             if (Device.RuntimePlatform == Device.Android)
             {
-                string[] items = { "シングル", "ダブルス" };
+                string[] items = { AppResources.Singles, AppResources.Doubles };
                 foreach (var item in items)
                 {
                     gameType.Items.Add(item);
@@ -120,7 +121,7 @@ namespace morimori.TScore
 
             if (string.IsNullOrWhiteSpace(gameName.Text))
             {
-                DisplayAlert("未入力", "試合名を入力して下さい。", "OK");
+                DisplayAlert(AppResources.NotYetEnteredMessage, AppResources.ErrorGameName, AppResources.OkButton);
                 return;
             }
 
@@ -128,7 +129,7 @@ namespace morimori.TScore
             {
                 if (string.IsNullOrWhiteSpace(myNameSingle.Text) || string.IsNullOrWhiteSpace(rivalNameSingle.Text))
                 {
-                    DisplayAlert("未入力", "選手名を入力して下さい。", "OK");
+                    DisplayAlert(AppResources.NotYetEnteredMessage, AppResources.ErrorPlayerName, AppResources.OkButton);
                     return;
                 }
             }
@@ -139,14 +140,14 @@ namespace morimori.TScore
                     string.IsNullOrWhiteSpace(rivalANameDoubles.Text) || 
                     string.IsNullOrWhiteSpace(rivalBNameDoubles.Text))
                 {
-                    DisplayAlert("未入力", "選手名を入力して下さい。", "OK");
+                    DisplayAlert(AppResources.NotYetEnteredMessage, AppResources.ErrorPlayerName, AppResources.OkButton);
                     return;
                 }
             }
 
             if (!CanSaveGame())
             {
-                DisplayAlert("未入力", "ゲームカウントを入力して下さい。", "OK");
+                DisplayAlert(AppResources.NotYetEnteredMessage, AppResources.ErrorGameCount, AppResources.OkButton);
                 return;
             }
 
@@ -376,7 +377,7 @@ namespace morimori.TScore
         /// <param name="e"></param>
         private async void deleteButton_Clicked(object sender, EventArgs e)
         {
-            var result = await DisplayAlert("注意", "削除しても宜しいですか？", "OK", "キャンセル");
+            var result = await DisplayAlert(AppResources.AttentionMessage, AppResources.AlertDelete, AppResources.OkButton, AppResources.CancelButton);
             if (!result) return;
 
             GameDataManager.sharedInstance.Remove(gameData);

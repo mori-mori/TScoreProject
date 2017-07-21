@@ -2562,11 +2562,12 @@ containing a value of this type.
         public static int mr_ic_pause_light=0x7f02009e;
         public static int mr_ic_play_dark=0x7f02009f;
         public static int mr_ic_play_light=0x7f0200a0;
-        public static int notification_template_icon_bg=0x7f0200a5;
+        public static int notification_template_icon_bg=0x7f0200a6;
         public static int segmented_control_background=0x7f0200a1;
         public static int segmented_control_first_background=0x7f0200a2;
         public static int segmented_control_last_background=0x7f0200a3;
-        public static int splash_screen=0x7f0200a4;
+        public static int splash=0x7f0200a4;
+        public static int splash_screen=0x7f0200a5;
     }
     public static final class id {
         public static int SegControl=0x7f070098;

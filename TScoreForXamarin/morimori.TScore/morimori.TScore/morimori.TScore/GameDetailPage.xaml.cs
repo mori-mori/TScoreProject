@@ -380,11 +380,14 @@ namespace morimori.TScore
             var result = await DisplayAlert(AppResources.AttentionMessage, AppResources.AlertDelete, AppResources.OkButton, AppResources.CancelButton);
             if (!result) return;
 
-            GameDataManager.sharedInstance.Remove(gameData);
+            if (gameData != null)
+            {
+                GameDataManager.sharedInstance.Remove(gameData);
 
-            gameData.Delete = true;
-            GameDataManager.sharedInstance.UpdateGameList(gameData);
-            GameDataManager.sharedInstance.LoadGameList();
+                gameData.Delete = true;
+                GameDataManager.sharedInstance.UpdateGameList(gameData);
+                GameDataManager.sharedInstance.LoadGameList();
+            }
 
             await Navigation.PopAsync(true);
         }

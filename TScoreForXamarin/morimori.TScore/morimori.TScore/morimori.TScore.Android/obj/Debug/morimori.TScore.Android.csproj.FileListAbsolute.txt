@@ -86,7 +86,8 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\zh-CN\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Debug\zh\morimori.TScore.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\morimori.TScore.Android.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\morimori.TScore.Android.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\morimori.TScore.Android.pdb

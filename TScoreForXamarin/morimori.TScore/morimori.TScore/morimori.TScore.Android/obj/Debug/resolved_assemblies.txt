@@ -53,4 +53,5 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\Mono.Security.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\linksrc\zh-CN\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\linksrc\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Debug\linksrc\zh\morimori.TScore.resources.dll

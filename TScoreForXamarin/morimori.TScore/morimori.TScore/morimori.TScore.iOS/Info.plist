@@ -26,13 +26,13 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.morimori.TScore</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>CFBundleName</key>
 	<string>com.morimori.TScore</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Media.xcassets/LaunchImages.launchimage</string>
 </dict>

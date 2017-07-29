@@ -61,3 +61,5 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\optimized\
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\morimori.TScore.iOS.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\AppStore\morimori.TScore.iOS.exe
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\AppStore\zh\morimori.TScore.resources.dll

@@ -102,3 +102,13 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\com.morimori.TScore.Android.apk
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\com.morimori.TScore.Android-Signed.apk
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\bin\com.morimori.TScore.Android.apk
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\zh\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\morimori.TScore.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\bin\Release\morimori.TScore.Android.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\FormsViewGroup.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\morimori.TScore.Android.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\morimori.TScore.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb

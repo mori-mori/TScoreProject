@@ -42,7 +42,6 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Release\Xamarin.Forms.Platform.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Release\Xamarin.Forms.Xaml.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Release\Xamarin.Forms.Xaml.xml
-Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.csprojResolveAssemblyReference.cache
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.MainPage.xaml.g.cs
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.App.xaml.g.cs
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.GameDetailPage.xaml.g.cs
@@ -50,3 +49,11 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.SegmentTest.xaml.g.cs
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.pdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Release\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\bin\Release\zh\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.Resources.AppResources.resources
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.Resources.AppResources.ja.resources
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.Resources.AppResources.zh.resources
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\morimori.TScore.csproj.GenerateResource.Cache
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\ja\morimori.TScore.resources.dll
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Release\zh\morimori.TScore.resources.dll

@@ -4,24 +4,69 @@
              x:Class="morimori.TScore.GameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" ItemsSource="{Binding listGame}" HasUnevenRows="True">
+            <ListView x:Name="gameListView" ItemTapped="gameListView_ItemTapped" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
                                 <StackLayout Orientation="Vertical" BackgroundColor="#2e8b57">
-                                    <StackLayout Margin="20,20,20,20">
+                                    <StackLayout Margin="20">
                                         <Label Text="{Binding Name}" HorizontalOptions="Start" TextColor="White" FontSize="Medium"/>
                                         <Label Text="{Binding Date}" HorizontalOptions="Start" TextColor="White" FontSize="Small"/>
                                     </StackLayout>
-                                    
                                 </StackLayout>
-                                <StackLayout Margin="20,20,20,20">
+                                <StackLayout Margin="20,5,15,15">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" Spacing="0">
+                                            <Label Text="{Binding MyName}" FontSize="Small" TextColor="Black"/>
+                                            <Label Text="{Binding PairName}" FontSize="Small" TextColor="Black"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Vertical" Grid.Row="2" Grid.Column="0" Spacing="0">
+                                            <Label Text="{Binding RivalAName}" FontSize="Small" TextColor="Black"/>
+                                            <Label Text="{Binding RivalBName}" FontSize="Small" TextColor="Black"/>
+                                        </StackLayout>
+                                        <Label Text="{Binding Set1Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="1"/>
+                                        <Label Text="{Binding MySet1Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" TextColor="Black"/>
+                                        <Label Text="{Binding RivalSet1Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
+                                        <Label Text="{Binding Set2Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="2" />
+                                        <Label Text="{Binding MySet2Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="2" TextColor="Black"/>
+                                        <Label Text="{Binding RivalSet2Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="2" TextColor="Black"/>
+                                        <Label Text="{Binding Set3Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="3" />
+                                        <Label Text="{Binding MySet3Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="3" TextColor="Black"/>
+                                        <Label Text="{Binding RivalSet3Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="3" TextColor="Black"/>
+                                        <Label Text="{Binding Set4Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="4" />
+                                        <Label Text="{Binding MySet4Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="4" TextColor="Black"/>
+                                        <Label Text="{Binding RivalSet4Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="4" TextColor="Black"/>
+                                        <Label Text="{Binding Set5Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="5" />
+                                        <Label Text="{Binding MySet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="5" TextColor="Black"/>
+                                        <Label Text="{Binding RivalSet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="5" TextColor="Black"/>
+                                    </Grid>
+                                    <!--<StackLayout Orientation="Horizontal" HorizontalOptions="End" BackgroundColor="Blue">
+                                        <Label Text="1st" FontSize="Micro" TextColor="Gray"/>
+                                        <Label Text="2st" FontSize="Micro" TextColor="Gray"/>
+                                        <Label Text="3st" FontSize="Micro" TextColor="Gray"/>
+                                        <Label Text="4st" FontSize="Micro" TextColor="Gray"/>
+                                        <Label Text="5st" FontSize="Micro" TextColor="Gray"/>
+                                    </StackLayout>
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,5">
                                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                                             <Label Text="{Binding MyName}" FontSize="Small"/>
                                             <Label Text="{Binding PairName}" FontSize="Small"/>
                                         </StackLayout>
+                                       
                                         <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                                             <Label Text="{Binding MySet1Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding MySet2Count}" FontSize="Small" HorizontalOptions="End"/>
@@ -43,7 +88,7 @@
                                             <Label Text="{Binding RivalSet4Count}" FontSize="Small" HorizontalOptions="End"/>
                                             <Label Text="{Binding RivalSet5Count}" FontSize="Small" HorizontalOptions="End"/>
                                         </StackLayout>
-                                    </StackLayout>
+                                    </StackLayout>-->
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

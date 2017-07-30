@@ -28,5 +28,11 @@ namespace morimori.TScore
         public string RivalSet5Count { get; set; }
         public string Remark { get; set; } // 備考欄
         public bool Delete { get; set; }
+
+        public string Set1Label { get; set; }
+        public string Set2Label { get; set; }
+        public string Set3Label { get; set; }
+        public string Set4Label { get; set; }
+        public string Set5Label { get; set; }
     }
 }

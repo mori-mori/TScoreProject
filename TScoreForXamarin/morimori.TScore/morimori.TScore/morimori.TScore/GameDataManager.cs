@@ -66,55 +66,65 @@ namespace morimori.TScore
                 {
                     gameString.MySet1Count = string.Empty;
                     gameString.RivalSet1Count = string.Empty;
+                    gameString.Set1Label = string.Empty;
                 }
                 else
                 {
                     gameString.MySet1Count = item.MySet1Count.ToString();
                     gameString.RivalSet1Count = item.RivalSet1Count.ToString();
+                    gameString.Set1Label = "1st";
                 }
 
                 if (item.MySet2Count == 0 && item.RivalSet2Count == 0)
                 {
                     gameString.MySet2Count = string.Empty;
                     gameString.RivalSet2Count = string.Empty;
+                    gameString.Set2Label = string.Empty;
                 }
                 else
                 {
                     gameString.MySet2Count = item.MySet2Count.ToString();
                     gameString.RivalSet2Count = item.RivalSet2Count.ToString();
+                    gameString.Set2Label = "2st";
                 }
 
                 if (item.MySet3Count == 0 && item.RivalSet3Count == 0)
                 {
                     gameString.MySet3Count = string.Empty;
                     gameString.RivalSet3Count = string.Empty;
+                    gameString.Set3Label = string.Empty;
                 }
                 else
                 {
                     gameString.MySet3Count = item.MySet3Count.ToString();
                     gameString.RivalSet3Count = item.RivalSet3Count.ToString();
+                    gameString.Set3Label = "3st";
                 }
 
                 if (item.MySet4Count == 0 && item.RivalSet4Count == 0)
                 {
                     gameString.MySet4Count = string.Empty;
                     gameString.RivalSet4Count = string.Empty;
+                    gameString.Set4Label = string.Empty;
                 }
                 else
                 {
                     gameString.MySet4Count = item.MySet4Count.ToString();
                     gameString.RivalSet4Count = item.RivalSet4Count.ToString();
+                    gameString.Set4Label = "4st";
                 }
 
                 if (item.MySet5Count == 0 && item.RivalSet5Count == 0)
                 {
                     gameString.MySet5Count = string.Empty;
                     gameString.RivalSet5Count = string.Empty;
+                    gameString.Set5Label = string.Empty;
                 }
                 else
                 {
                     gameString.MySet5Count = item.MySet5Count.ToString();
                     gameString.RivalSet5Count = item.RivalSet5Count.ToString();
+                    gameString.Set5Label = "5st";
                 }
                
                 gameString.Remark = item.Remark;

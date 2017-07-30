@@ -65,3 +65,4 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.exe
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\obj\iPhone\Debug\morimori.TScore.iOS.pdb
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\morimori.TScore.dll.mdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore.iOS\bin\iPhone\Debug\zh\morimori.TScore.resources.dll

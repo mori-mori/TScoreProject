@@ -31,6 +31,9 @@ namespace morimori.TScore
                 gameType.SelectedIndexChanged += SelectedGameType;
 
                 GameTypeStack.Children.Add(gameType);
+
+                singleArea.IsVisible = true;
+                doublesArea.IsVisible = false;
             }
             
             DisplayGameData();

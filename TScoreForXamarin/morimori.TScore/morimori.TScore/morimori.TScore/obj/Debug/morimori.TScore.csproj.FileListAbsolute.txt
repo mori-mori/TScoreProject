@@ -57,3 +57,4 @@ Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morim
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\zh\morimori.TScore.resources.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.dll
 Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.pdb
+Z:\Projects\TScoreProject\TScoreForXamarin\morimori.TScore\morimori.TScore\morimori.TScore\obj\Debug\morimori.TScore.csprojResolveAssemblyReference.cache

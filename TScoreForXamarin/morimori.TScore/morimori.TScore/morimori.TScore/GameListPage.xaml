@@ -31,12 +31,10 @@
                                             <ColumnDefinition Width="Auto"/>
                                         </Grid.ColumnDefinitions>
                                         <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" Spacing="0">
-                                            <Label Text="{Binding MyName}" FontSize="Small" TextColor="Black"/>
-                                            <Label Text="{Binding PairName}" FontSize="Small" TextColor="Black"/>
+                                            <Label Text="{Binding MyTeam}" FontSize="Small" TextColor="Black"/>
                                         </StackLayout>
                                         <StackLayout Orientation="Vertical" Grid.Row="2" Grid.Column="0" Spacing="0">
-                                            <Label Text="{Binding RivalAName}" FontSize="Small" TextColor="Black"/>
-                                            <Label Text="{Binding RivalBName}" FontSize="Small" TextColor="Black"/>
+                                            <Label Text="{Binding RivalTeam}" FontSize="Small" TextColor="Black"/>
                                         </StackLayout>
                                         <Label Text="{Binding Set1Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="1"/>
                                         <Label Text="{Binding MySet1Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" TextColor="Black"/>

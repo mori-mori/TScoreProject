@@ -57,10 +57,20 @@ namespace morimori.TScore
                 gameString.EndTime = item.EndTime;
                 gameString.Place = item.Place;
                 gameString.Type = item.Type.ToString();
-                gameString.MyName = item.MyName;
-                gameString.PairName = item.PairName;
-                gameString.RivalAName = item.RivalAName;
-                gameString.RivalBName = item.RivalBName;
+
+                string myTeam = item.MyName;
+                string rivalTeam = item.RivalAName;
+
+                if (item.Type == 1)
+                {
+                    gameString.MyTeam = myTeam + System.Environment.NewLine + item.PairName;
+                    gameString.RivalTeam = rivalTeam + System.Environment.NewLine + item.RivalBName;
+                }
+                else
+                {
+                    gameString.MyTeam = myTeam;
+                    gameString.RivalTeam = rivalTeam;
+                }
 
                 if (item.MySet1Count == 0 && item.RivalSet1Count == 0)
                 {

@@ -16,6 +16,10 @@ namespace morimori.TScore
         public string PairName { get; set; } // ペアの名前
         public string RivalAName { get; set; } // ライバル名
         public string RivalBName { get; set; } // ライバル名
+
+        public string MyTeam { get; set; } // リスト表示用
+        public string RivalTeam { get; set; }// リスト表示用
+
         public string MySet1Count { get; set; } // 1セット目
         public string RivalSet1Count { get; set; }
         public string MySet2Count { get; set; } // 2セット目

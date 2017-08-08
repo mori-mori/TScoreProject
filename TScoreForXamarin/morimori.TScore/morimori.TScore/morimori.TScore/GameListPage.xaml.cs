@@ -14,57 +14,18 @@ namespace morimori.TScore
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameListPage : ContentPage
     {
-        //private ObservableCollection<Game> games = new ObservableCollection<Game>();
-        //private ObservableCollection<GameString> listGame = new ObservableCollection<GameString>();
-
-
         public GameListPage()
         {
             InitializeComponent();
 
-            //Title = "トーナメント一覧";
             Title = AppResources.Title;
 
             GameDataManager.sharedInstance.LoadGameList();
 
-            //games = GameDataManager.sharedInstance.list;
-
-            //foreach (var item in games)
-            //{
-            //    var gameString = new GameString();
-            //    gameString.Id = item.Id.ToString();
-            //    gameString.Name = item.Name;
-            //    gameString.Date = item.Date;
-            //    gameString.StartTime = item.StartTime;
-            //    gameString.EndTime = item.EndTime;
-            //    gameString.Place = item.Place;
-            //    gameString.Type = item.Type.ToString();
-            //    gameString.MyName = item.MyName;
-            //    gameString.PairName = item.PairName;
-            //    gameString.RivalAName = item.RivalAName;
-            //    gameString.RivalBName = item.RivalBName;
-            //    gameString.MySet1Count = item.MySet1Count.ToString();
-            //    gameString.RivalSet1Count = item.RivalSet1Count.ToString();
-            //    gameString.MySet2Count = item.MySet2Count.ToString();
-            //    gameString.RivalSet2Count = item.RivalSet2Count.ToString();
-            //    gameString.MySet3Count = item.MySet3Count.ToString();
-            //    gameString.RivalSet3Count = item.RivalSet3Count.ToString();
-            //    gameString.MySet4Count = item.MySet4Count.ToString();
-            //    gameString.RivalSet4Count = item.RivalSet4Count.ToString();
-            //    gameString.MySet5Count = item.MySet5Count.ToString();
-            //    gameString.RivalSet5Count = item.RivalSet5Count.ToString();
-            //    gameString.Remark = item.Remark;
-
-            //    listGame.Add(gameString);
-            //}
-
-            //gameListView.ItemsSource = games;
-            //GameDataManager.sharedInstance.LoadGameList();
             gameListView.ItemsSource = GameDataManager.sharedInstance.LoadGameList();
             
             ToolbarItems.Add(new ToolbarItem
             {
-                //Text = "新規追加",
                 Text = AppResources.NewEntry,
 
                 Command = new Command(() => Navigation.PushAsync(new GameDetailPage(), true))
@@ -88,7 +49,6 @@ namespace morimori.TScore
             ListView ls = (ListView)sender;
             var gd = ls.SelectedItem as GameString;
 
-            //var ga = GameDataManager.sharedInstance.Haver[int.Parse(gd.Id) - 1];
             var ga = GameDataManager.sharedInstance.Haver.FirstOrDefault(n => n.Id == int.Parse(gd.Id));
 
             Navigation.PushAsync(new GameDetailPage(ga), true);

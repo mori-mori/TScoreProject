@@ -215,7 +215,7 @@ namespace morimori.TScore.Resources {
         }
         
         /// <summary>
-        ///   Set1 に類似しているローカライズされた文字列を検索します。
+        ///   1st  に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Set1 {
             get {
@@ -224,7 +224,7 @@ namespace morimori.TScore.Resources {
         }
         
         /// <summary>
-        ///   Set2 に類似しているローカライズされた文字列を検索します。
+        ///   2nd に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Set2 {
             get {
@@ -233,7 +233,7 @@ namespace morimori.TScore.Resources {
         }
         
         /// <summary>
-        ///   Set3 に類似しているローカライズされた文字列を検索します。
+        ///   3rd に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Set3 {
             get {
@@ -242,7 +242,7 @@ namespace morimori.TScore.Resources {
         }
         
         /// <summary>
-        ///   Set4 に類似しているローカライズされた文字列を検索します。
+        ///   4th に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Set4 {
             get {
@@ -251,7 +251,7 @@ namespace morimori.TScore.Resources {
         }
         
         /// <summary>
-        ///   Set5 に類似しているローカライズされた文字列を検索します。
+        ///   5th に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Set5 {
             get {

@@ -52,41 +52,6 @@
                                         <Label Text="{Binding MySet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="5" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="5" TextColor="Black"/>
                                     </Grid>
-                                    <!--<StackLayout Orientation="Horizontal" HorizontalOptions="End" BackgroundColor="Blue">
-                                        <Label Text="1st" FontSize="Micro" TextColor="Gray"/>
-                                        <Label Text="2st" FontSize="Micro" TextColor="Gray"/>
-                                        <Label Text="3st" FontSize="Micro" TextColor="Gray"/>
-                                        <Label Text="4st" FontSize="Micro" TextColor="Gray"/>
-                                        <Label Text="5st" FontSize="Micro" TextColor="Gray"/>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,5">
-                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                            <Label Text="{Binding MyName}" FontSize="Small"/>
-                                            <Label Text="{Binding PairName}" FontSize="Small"/>
-                                        </StackLayout>
-                                       
-                                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                                            <Label Text="{Binding MySet1Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding MySet2Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding MySet3Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding MySet4Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding MySet5Count}" FontSize="Small" HorizontalOptions="End"/>
-                                        </StackLayout>
-                                    </StackLayout>
-
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                            <Label Text="{Binding RivalAName}" FontSize="Small"/>
-                                            <Label Text="{Binding RivalBName}" FontSize="Small"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                                            <Label Text="{Binding RivalSet1Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding RivalSet2Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding RivalSet3Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding RivalSet4Count}" FontSize="Small" HorizontalOptions="End"/>
-                                            <Label Text="{Binding RivalSet5Count}" FontSize="Small" HorizontalOptions="End"/>
-                                        </StackLayout>
-                                    </StackLayout>-->
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

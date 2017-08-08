@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using PCLStorage;
+using morimori.TScore.Resources;
 
 namespace morimori.TScore
 {
@@ -82,7 +83,7 @@ namespace morimori.TScore
                 {
                     gameString.MySet1Count = item.MySet1Count.ToString();
                     gameString.RivalSet1Count = item.RivalSet1Count.ToString();
-                    gameString.Set1Label = "1st";
+                    gameString.Set1Label = AppResources.Set1;
                 }
 
                 if (item.MySet2Count == 0 && item.RivalSet2Count == 0)
@@ -95,7 +96,7 @@ namespace morimori.TScore
                 {
                     gameString.MySet2Count = item.MySet2Count.ToString();
                     gameString.RivalSet2Count = item.RivalSet2Count.ToString();
-                    gameString.Set2Label = "2st";
+                    gameString.Set2Label = AppResources.Set2;
                 }
 
                 if (item.MySet3Count == 0 && item.RivalSet3Count == 0)
@@ -108,7 +109,7 @@ namespace morimori.TScore
                 {
                     gameString.MySet3Count = item.MySet3Count.ToString();
                     gameString.RivalSet3Count = item.RivalSet3Count.ToString();
-                    gameString.Set3Label = "3st";
+                    gameString.Set3Label = AppResources.Set3;
                 }
 
                 if (item.MySet4Count == 0 && item.RivalSet4Count == 0)
@@ -121,7 +122,7 @@ namespace morimori.TScore
                 {
                     gameString.MySet4Count = item.MySet4Count.ToString();
                     gameString.RivalSet4Count = item.RivalSet4Count.ToString();
-                    gameString.Set4Label = "4st";
+                    gameString.Set4Label = AppResources.Set4;
                 }
 
                 if (item.MySet5Count == 0 && item.RivalSet5Count == 0)
@@ -134,7 +135,7 @@ namespace morimori.TScore
                 {
                     gameString.MySet5Count = item.MySet5Count.ToString();
                     gameString.RivalSet5Count = item.RivalSet5Count.ToString();
-                    gameString.Set5Label = "5st";
+                    gameString.Set5Label = AppResources.Set5;
                 }
                
                 gameString.Remark = item.Remark;

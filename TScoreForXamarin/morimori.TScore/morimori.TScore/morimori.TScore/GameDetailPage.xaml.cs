@@ -60,13 +60,11 @@ namespace morimori.TScore
                 {
                     gameType.Items.Add(item);
                 }
-                //gameType.SelectedIndex = 0;
 
                 gameType.SelectedIndexChanged += SelectedGameType;
 
                 GameTypeStack.Children.Add(gameType);
             }
-
             DisplayGameData();
         }
 
@@ -156,15 +154,6 @@ namespace morimori.TScore
 
             var newGame = GetDisplayedGameData();
 
-            //if (gameData != null)
-            //{
-            //    //GameDataManager.sharedInstance.list.Remove(gameData);
-            //    GameDataManager.sharedInstance.Remove(gameData);
-            //}
-
-            ////GameDataManager.sharedInstance.list.Insert(0, newGame);
-            //GameDataManager.sharedInstance.Insert(newGame);
-
             GameDataManager.sharedInstance.UpdateGameList(newGame);
             GameDataManager.sharedInstance.LoadGameList();
 
@@ -211,7 +200,6 @@ namespace morimori.TScore
             {
                 return false;
             }
-
             return true;
         }
 

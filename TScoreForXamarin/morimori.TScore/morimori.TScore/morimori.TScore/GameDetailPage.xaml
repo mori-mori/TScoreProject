@@ -47,41 +47,41 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{local:TranslateExtension Key = Set1}" WidthRequest="50" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">   
-                            <Entry x:Name="mySetCount1" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="mySetCount1" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                             <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                            <Entry x:Name="rivalSetCount1" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="rivalSetCount1" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{local:TranslateExtension Key = Set2}" WidthRequest="50" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Entry x:Name="mySetCount2" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="mySetCount2" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                             <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                            <Entry x:Name="rivalSetCount2" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="rivalSetCount2" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{local:TranslateExtension Key = Set3}" WidthRequest="50" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Entry x:Name="mySetCount3" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="mySetCount3" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                             <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                            <Entry x:Name="rivalSetCount3" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="rivalSetCount3" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{local:TranslateExtension Key = Set4}" WidthRequest="50" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Entry x:Name="mySetCount4" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="mySetCount4" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                             <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                            <Entry x:Name="rivalSetCount4" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="rivalSetCount4" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{local:TranslateExtension Key = Set5}" WidthRequest="50" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Entry x:Name="mySetCount5" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="mySetCount5" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                             <Label Text="-" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                            <Entry x:Name="rivalSetCount5" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                            <Entry x:Name="rivalSetCount5" Text="0" WidthRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Margin="0, 20, 0, 20">

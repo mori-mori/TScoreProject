@@ -36,19 +36,19 @@
                                         <StackLayout Orientation="Vertical" Grid.Row="2" Grid.Column="0" Spacing="0">
                                             <Label Text="{Binding RivalTeam}" FontSize="Small" TextColor="Black"/>
                                         </StackLayout>
-                                        <Label Text="{Binding Set1Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="1"/>
+                                        <Label Text="{Binding Set1Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
                                         <Label Text="{Binding MySet1Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet1Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
-                                        <Label Text="{Binding Set2Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="2" />
+                                        <Label Text="{Binding Set2Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" />
                                         <Label Text="{Binding MySet2Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="2" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet2Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="2" TextColor="Black"/>
-                                        <Label Text="{Binding Set3Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="3" />
+                                        <Label Text="{Binding Set3Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Center" />
                                         <Label Text="{Binding MySet3Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="3" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet3Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="3" TextColor="Black"/>
-                                        <Label Text="{Binding Set4Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="4" />
+                                        <Label Text="{Binding Set4Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="4" HorizontalTextAlignment="Center" />
                                         <Label Text="{Binding MySet4Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="4" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet4Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="4" TextColor="Black"/>
-                                        <Label Text="{Binding Set5Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="5" />
+                                        <Label Text="{Binding Set5Label}" FontSize="Micro" TextColor="Gray" Grid.Row="0" Grid.Column="5" HorizontalTextAlignment="Center" />
                                         <Label Text="{Binding MySet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="5" TextColor="Black"/>
                                         <Label Text="{Binding RivalSet5Count}" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="5" TextColor="Black"/>
                                     </Grid>
